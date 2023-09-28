@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DentonsQueries">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="fin91devsql01.e60460017334.database.windows.net:">
+          <Created>2022-02-16T11:10:54.8645844+02:00</Created>
+          <Type>SQL</Type>
+          <Server>fin91devsql01.e60460017334.database.windows.net</Server>
+          <UserName />
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName />
+        </ConnectionNode>
+        <ConnectionNode Name="fin91devsql01.e60460017334.database.windows.net:">
+          <Created>2022-02-16T11:11:01.1822328+02:00</Created>
+          <Type>SQL</Type>
+          <Server>fin91devsql01.e60460017334.database.windows.net</Server>
+          <UserName />
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="fin91devsql01.e60460017334.database.windows.net:inspiredsb@dentons.global">
+          <Created>2022-02-21T15:29:01.6411982+02:00</Created>
+          <Type>SQL</Type>
+          <Server>fin91devsql01.e60460017334.database.windows.net</Server>
+          <UserName />
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="FRD033 Examples.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:fin91devsql01.e60460017334.database.windows.net:False:inspiredsb@dentons.global</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>fin91devsql01.e60460017334.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>FRD033 Examples.sql</FullPath>
+        </FileNode>
+        <FileNode Name="FRD033 Test.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:fin91devsql01.e60460017334.database.windows.net:False:inspiredsb@dentons.global</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>fin91devsql01.e60460017334.database.windows.net</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>FRD033 Test.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

@@ -1,0 +1,187 @@
+<Client_Srv xmlns="http://elite.com/schemas/transaction/process/write/Client_Srv">
+	<Initialize xmlns="http://elite.com/schemas/transaction/object/write/Client">
+		<Edit>
+			<Client KeyValue="1">
+				<Attributes>
+					<Entity>16</Entity>
+					<Number>10000</Number>
+					<AltNumber>NewValue</AltNumber>
+					<DisplayName>London - Domestic Client - Head office</DisplayName>
+					<SortString>NewValue</SortString>
+					<RelatedClient>1</RelatedClient>
+					<CliType />
+					<CliStatusType>OPEN</CliStatusType>
+					<CliStatusDate>2020-01-02T00:00:00</CliStatusDate>
+					<CreditLimit>2</CreditLimit>
+					<Currency>GBP</Currency>
+					<CurrencyDate>2020-07-25T00:00:00</CurrencyDate>
+					<OpenDate>2020-01-02T00:00:00</OpenDate>
+					<InvoiceSite>154</InvoiceSite>
+					<StatementSite />
+					<ContactInfo>NewValue</ContactInfo>
+					<Industry />
+					<Narrative>NewValue</Narrative>
+					<Language>1033</Language>
+					<IsPayor>0</IsPayor>
+					<PayorIndex>2</PayorIndex>
+					<BillingInstruc>NewValue</BillingInstruc>
+					<Description>NewValue</Description>
+					<OpenTkpr>2</OpenTkpr>
+					<CloseTkpr />
+					<CloseDate>1900-01-02T00:00:00</CloseDate>
+					<IsAutoNumbering>1</IsAutoNumbering>
+					<BillDCSTemplate />
+					<StmtDCSTemplate />
+					<Country>GB</Country>
+					<CliAttribute />
+					<CliCategory />
+					<EntryDate>2020-01-02T00:00:00</EntryDate>
+					<VATRegistration>NewValue</VATRegistration>
+					<IsEngageLetterReq>0</IsEngageLetterReq>
+					<EngageLetterSubDate>1900-01-02T00:00:00</EngageLetterSubDate>
+					<EngageLetterRecDate>1900-01-02T00:00:00</EngageLetterRecDate>
+					<EngageLetterComment>NewValue</EngageLetterComment>
+					<IsWaiverLetterReq>0</IsWaiverLetterReq>
+					<WaiverLetterSubDate>1900-01-02T00:00:00</WaiverLetterSubDate>
+					<WaiverLetterRecDate>1900-01-02T00:00:00</WaiverLetterRecDate>
+					<WaiverLetterComment>NewValue</WaiverLetterComment>
+					<IsConflictsConfidential>1</IsConflictsConfidential>
+					<ApproveTkpr />
+					<ConflictStatus />
+					<ProfDCSTemplate />
+					<IsIdentified>1</IsIdentified>
+					<IdentificationDate>1900-01-02T00:00:00</IdentificationDate>
+					<VolumeDiscountGroup />
+					<IsEBill>1</IsEBill>
+					<DueDays>2</DueDays>
+					<ApproveDate>1900-01-02T00:00:00</ApproveDate>
+					<IsOrigClosedStatus>1</IsOrigClosedStatus>
+					<IsNumberEnabled>0</IsNumberEnabled>
+					<IsCreateTaxInvOnRcpt>1</IsCreateTaxInvOnRcpt>
+					<IsICB>1</IsICB>
+					<ICBUnit />
+					<StmtSitePrimPhone>NewValue</StmtSitePrimPhone>
+					<InvSitePrimPhone>NewValue</InvSitePrimPhone>
+					<PayorTaxArea>UK01</PayorTaxArea>
+					<PayorTaxNum>NewValue</PayorTaxNum>
+					<IsNewEntity>0</IsNewEntity>
+					<NewEntityIndex>2</NewEntityIndex>
+					<LoadGroup>NewValue</LoadGroup>
+					<LoadNumber>NewValue</LoadNumber>
+					<LoadSource>NewValue</LoadSource>
+					<RSSFeed>NewValue</RSSFeed>
+					<TickerSymbol>NewValue</TickerSymbol>
+					<URL>NewValue</URL>
+					<CreditNoteDCSTemplate />
+					<BillGroupDCSTemplate />
+					<CreditNoteGroupDCSTemplate />
+					<EBHClientList />
+					<IsExportRestricted>1</IsExportRestricted>
+					<VATRegistrationSeq>NewValue</VATRegistrationSeq>
+					<IsEbhAttachments>1</IsEbhAttachments>
+					<CliElecBillingType />
+					<CliElecCostTypeMap />
+					<CliElecTitleMap />
+					<CliElecTaxCodeMap />
+					<EBHArrangement />
+					<MatterUDFList_ccc />
+					<UDFList_ccc />
+					<GlobalClientReference_ccc>NewValue</GlobalClientReference_ccc>
+				</Attributes>
+				<Children>
+					<CliDate>
+						<Edit>
+							<CliDate Position="0">
+								<Attributes>
+									<EffStart>2020-01-02T00:00:00</EffStart>
+									<Office>8054</Office>
+									<TkprTeam />
+									<Arrangement>HOURLY</Arrangement>
+									<RspTkpr>684</RspTkpr>
+									<BillTkpr>684</BillTkpr>
+									<SpvTkpr>684</SpvTkpr>
+									<NxStartDate>1753-01-02T00:00:00</NxStartDate>
+								</Attributes>
+							</CliDate>
+						</Edit>
+						<Edit>
+							<CliDate KeyValue="6d4ec4e8-cb94-4ec6-bf08-898a045eb776">
+								<Attributes>
+									<EffStart>2020-01-02T00:00:00</EffStart>
+									<Office>8054</Office>
+									<TkprTeam />
+									<Arrangement>HOURLY</Arrangement>
+									<RspTkpr>684</RspTkpr>
+									<BillTkpr>684</BillTkpr>
+									<SpvTkpr>684</SpvTkpr>
+									<NxStartDate>1753-01-02T00:00:00</NxStartDate>
+								</Attributes>
+							</CliDate>
+						</Edit>
+					</CliDate>
+					<ClientRateExc>
+						<Add>
+							<ClientRateExc>
+								<Attributes>
+									<RateExc>3e778cc7-6c2e-467a-ad28-7962eb6a013b</RateExc>
+									<StartDate>1900-01-02T00:00:00</StartDate>
+									<EndDate>1900-01-02T00:00:00</EndDate>
+								</Attributes>
+							</ClientRateExc>
+						</Add>
+						<Edit>
+							<ClientRateExc KeyValue="6d3c100f-0563-4d57-a621-dc5e968d4e6c">
+								<Attributes>
+									<RateExc>3e778cc7-6c2e-467a-ad28-7962eb6a013b</RateExc>
+									<StartDate>1900-01-02T00:00:00</StartDate>
+									<EndDate>1900-01-02T00:00:00</EndDate>
+								</Attributes>
+							</ClientRateExc>
+						</Edit>
+					</ClientRateExc>
+					<ClientGroupClient2_ccc>
+						<Add>
+							<ClientGroupClient2_ccc>
+								<Attributes>
+									<ClientGroup_ccc>G_Top10021</ClientGroup_ccc>
+								</Attributes>
+							</ClientGroupClient2_ccc>
+						</Add>
+						<Edit>
+							<ClientGroupClient2_ccc KeyValue="d3626bd7-cad9-4da6-92ea-e3cea6010911">
+								<Attributes>
+									<ClientGroup_ccc>G_Top10021</ClientGroup_ccc>
+								</Attributes>
+							</ClientGroupClient2_ccc>
+						</Edit>
+					</ClientGroupClient2_ccc>
+					<CliUDF_ccc>
+						<Add>
+							<CliUDF_ccc>
+								<Attributes>
+									<IsRequired>1</IsRequired>
+									<NxCurrencyCode />
+									<OrderBy>2</OrderBy>
+									<UDF_ccc>LWFMID</UDF_ccc>
+									<UDFArchetype/>
+									<UDFBoolean>1</UDFBoolean>
+									<UDFDate>1900-01-02T00:00:00</UDFDate>
+									<UDFDateTime>1900-01-02T00:00:00</UDFDateTime>
+									<UDFDecimal>2</UDFDecimal>
+									<UDFGuid/>
+									<UDFInteger>2</UDFInteger>
+									<UDFMultiLanguage>NewValue</UDFMultiLanguage>
+									<UDFString>NewValue</UDFString>
+									<UDFValidationListItem_ccc />
+									<UDFLabel>Law Firm ID</UDFLabel>
+									<IsPrintTemplate>0</IsPrintTemplate>
+								</Attributes>
+							</CliUDF_ccc>
+						</Add>
+
+					</CliUDF_ccc>
+				</Children>
+			</Client>
+		</Edit>
+	</Initialize>
+</Client_Srv>

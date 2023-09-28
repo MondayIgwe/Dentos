@@ -1,0 +1,1723 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>Elite3E.RegressionTests</RootNamespace>
+		<AssemblyName>Elite3E.RegressionTests</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Features\EndToEnd\O-035 Client Maintenance via DentonsOpen\**" />
+		<Compile Remove="Features\EndToEnd\O-039 Closing a Client\**" />
+		<Compile Remove="Features\EndToEnd\O-112 Add new Fee Earner\**" />
+		<Compile Remove="Features\EndToEnd\O-145 Client Maintenance Rate Exception Groups %28Set at Client%29\**" />
+		<Compile Remove="Features\EndToEnd\O-147 Rate Type Global Change\**" />
+		<Compile Remove="Features\EndToEnd\O-225 Closing inactive Clients\**" />
+		<Compile Remove="Features\EndToEnd\O-259 - O2C Trust Receipt - On Account client Receipt Form\**" />
+		<Compile Remove="Features\EndToEnd\O-286 Cash Receipts GL\**" />
+		<Compile Remove="Features\EndToEnd\O-287 Cash Receipts\**" />
+		<Compile Remove="Features\EndToEnd\O-288 Cash Receipt Reversal Invoice\**" />
+		<Compile Remove="Features\EndToEnd\O-289 Cash Receipt Reversal GL\**" />
+		<Compile Remove="Features\EndToEnd\O-290 Cash Receipt Reversal\**" />
+		<Compile Remove="Features\EndToEnd\P-001 Process invoice for Indirect Expenses\**" />
+		<Compile Remove="Features\EndToEnd\P-022 Create a New Vendor or Payee  Non VMS\**" />
+		<Compile Remove="Features\EndToEnd\PTS1\O-039 Closing a Client\**" />
+		<Compile Remove="Features\Release10\FRD043\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-035 Client Maintenance via DentonsOpen\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-039 Closing a Client\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-112 Add new Fee Earner\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-145 Client Maintenance Rate Exception Groups %28Set at Client%29\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-147 Rate Type Global Change\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-225 Closing inactive Clients\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-259 - O2C Trust Receipt - On Account client Receipt Form\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-286 Cash Receipts GL\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-287 Cash Receipts\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-288 Cash Receipt Reversal Invoice\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-289 Cash Receipt Reversal GL\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\O-290 Cash Receipt Reversal\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\P-001 Process invoice for Indirect Expenses\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\P-022 Create a New Vendor or Payee  Non VMS\**" />
+		<EmbeddedResource Remove="Features\EndToEnd\PTS1\O-039 Closing a Client\**" />
+		<EmbeddedResource Remove="Features\Release10\FRD043\**" />
+		<None Remove="Features\EndToEnd\O-035 Client Maintenance via DentonsOpen\**" />
+		<None Remove="Features\EndToEnd\O-039 Closing a Client\**" />
+		<None Remove="Features\EndToEnd\O-112 Add new Fee Earner\**" />
+		<None Remove="Features\EndToEnd\O-145 Client Maintenance Rate Exception Groups %28Set at Client%29\**" />
+		<None Remove="Features\EndToEnd\O-147 Rate Type Global Change\**" />
+		<None Remove="Features\EndToEnd\O-225 Closing inactive Clients\**" />
+		<None Remove="Features\EndToEnd\O-259 - O2C Trust Receipt - On Account client Receipt Form\**" />
+		<None Remove="Features\EndToEnd\O-286 Cash Receipts GL\**" />
+		<None Remove="Features\EndToEnd\O-287 Cash Receipts\**" />
+		<None Remove="Features\EndToEnd\O-288 Cash Receipt Reversal Invoice\**" />
+		<None Remove="Features\EndToEnd\O-289 Cash Receipt Reversal GL\**" />
+		<None Remove="Features\EndToEnd\O-290 Cash Receipt Reversal\**" />
+		<None Remove="Features\EndToEnd\P-001 Process invoice for Indirect Expenses\**" />
+		<None Remove="Features\EndToEnd\P-022 Create a New Vendor or Payee  Non VMS\**" />
+		<None Remove="Features\EndToEnd\PTS1\O-039 Closing a Client\**" />
+		<None Remove="Features\Release10\FRD043\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-035 Client Maintenance via DentonsOpen\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-039 Closing a Client\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-112 Add new Fee Earner\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-145 Client Maintenance Rate Exception Groups %28Set at Client%29\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-147 Rate Type Global Change\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-225 Closing inactive Clients\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-259 - O2C Trust Receipt - On Account client Receipt Form\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-286 Cash Receipts GL\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-287 Cash Receipts\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-288 Cash Receipt Reversal Invoice\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-289 Cash Receipt Reversal GL\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\O-290 Cash Receipt Reversal\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\P-001 Process invoice for Indirect Expenses\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\P-022 Create a New Vendor or Payee  Non VMS\**" />
+		<SpecFlowFeatureFiles Remove="Features\EndToEnd\PTS1\O-039 Closing a Client\**" />
+		<SpecFlowFeatureFiles Remove="Features\Release10\FRD043\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-035 Client Maintenance via DentonsOpen\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-039 Closing a Client\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-112 Add new Fee Earner\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-145 Client Maintenance Rate Exception Groups %28Set at Client%29\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-147 Rate Type Global Change\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-225 Closing inactive Clients\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-259 - O2C Trust Receipt - On Account client Receipt Form\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-286 Cash Receipts GL\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-287 Cash Receipts\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-288 Cash Receipt Reversal Invoice\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-289 Cash Receipt Reversal GL\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\O-290 Cash Receipt Reversal\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\P-001 Process invoice for Indirect Expenses\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\P-022 Create a New Vendor or Payee  Non VMS\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\EndToEnd\PTS1\O-039 Closing a Client\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release10\FRD043\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release014\FRD36\BillingRule_Internal_Proforma - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release014\FRD36\VerifyBillingProcess - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release014\FRD36\VerifyBillingProcess_AutoInvoiceDispatch - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release014\FRD36\VerifyBillingProcess_STKInvoiceDispatch - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release014\VerifyBillingProcess - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release2\FRD041_O2C_FiscalInvoicing\ReceiptWithoutFiscalInvoice - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release9\FRD016_TransactionAuditing\ClientMaintenanceAudit - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release9\FRD016_TransactionAuditing\TimeModifyAuditPostedBy - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Client_Management_Metric - Copy.feature.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="Features\Release10\FRD043\**" />
+		<EmbeddedResource Remove="Features\Release10\FRD043\**" />
+		<None Remove="Features\Release10\FRD043\**" />
+		<SpecFlowFeatureFiles Remove="Features\Release10\FRD043\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release10\FRD043\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release2\FRD041_O2C_FiscalInvoicing\ReceiptWithoutFiscalInvoice - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release9\FRD016_TransactionAuditing\ClientMaintenanceAudit - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release9\FRD016_TransactionAuditing\TimeModifyAuditPostedBy - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Features\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Client_Management_Metric - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.02\CR001\TimekeeperFeature.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\DirectChequeWithoutVoucherAudit.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV001-Matter\MatterMaintenance.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV003 - TIMEKEEPER\TimeKeeper.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV004- Payer\Payer.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV005 - GLACCT\GlAccount.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV006 - VENDOR\VendorConfigChanges.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV007 - PAYEE\PayeeMaintenanceConfigChanges.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV009 - BANKACCTAP\BankAccountOfficeConfigChanges.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV010 - BANKACCTRUST\BankAccountTrustChanges.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV011 - INVMASTER\InvoiceMaster.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV012 - TRUSTRECEIPT\Trust Receipt Feature.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV014 - RCPTMASTER\ReceiptMaster.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV015 - INVPAYOR\InvoicePayor.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV017 - ARDETAIL\ARDetail.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV018 - Collectionitem\CollectionITem.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\FRD001\DEV019 - Voucher DEV021 - Ckmaster\VoucherCkMaster.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014.03\VerifyTaskListAuditButton.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV001_Timekeeper Workflow Routing.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV003_Payers And Addresses.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV005_BillSubjectToClientApproval.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV008_UpdatePayer.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV013_DeferAndEstimatedBillDate.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV015_ EBilling Flag.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV017_Updating Apply Adjustment Child Form.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV020_RouteToAndReturnTo.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV021_OfficeConfigurationProformaApprover.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV022_MatterAttributeFinanceFirst.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV024_Proformas Generated via Credit Note.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD019 Billing Workflow\DEV040_WorkflowRouting.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD023_O2C Quick Bill\MatterQuickBilling.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026A_O2C_Collections\CollectionControlPanel.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026A_O2C_Collections\CollectionDetailsReport.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026A_O2C_Collections\CollectionItemNewFields.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026A_O2C_Collections\CollectionItems.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026A_O2C_Collections\CollectionWorkflow.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026A_O2C_Collections\ManagedCollectionSteps(Custom).feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026A_O2C_Collections\VerifyCustomItemLanguageField.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026B_O2C - Invoice Manager\DEV001\CollectionInvoiceMetric.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerClientNotes.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerDisputed.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerDoubtful.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerMatterNotes.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManger.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD035 - Proforma Edit\DEV001 - Post Bill Proforma Edit.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD035 - Proforma Edit\DEV002 - Dispatch Date.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD035 - Proforma Edit\DEV003 - Presentation values stored in Bill tables.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD035 - Proforma Edit\DEV004 - Invoice addresses added to Invoice table.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD043 - Proforma Generation\DEV001 - Workflow Proforma Generation default values.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV001-Verify change of fields and cols in GLUnit.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV002 - GL Unit Group.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV003-Verify that COA Statutory Chart field.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV004-Verify GL Approvers.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV005 - Verify creation of receipt using doubtful ar natural field .feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV006 - Verify GL book field in GJ Entry and GJ Request.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV008 - Statutory Account in advanced search.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV009 - Verify GL Timekeeper segment.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD056 GL\DEV010 - General Journal Entry - GJ Category field.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\BillingRule_Internal_Proforma.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\BillingRule_OAC_Proforma.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\BillingWorkflow_GroupProforma.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\BillingWorkflow_SplitBilling.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\VerifyBillingProcess_AutoInvoiceDispatch.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\VerifyBillingProcess_FinanceInvoiceDispatch.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\VerifyBillingProcess_STKInvoiceDispatch.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release014\FRD36\VerifyInvoiceOverride_InvoiceType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD014_All_TimeKeeperMaintenance\FeeEarnerVerifySignature.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsDuplicateClient.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsOwnerandRespnsibleFeeEarner.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsTimekeeper.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupWithClientAndFeeEarner.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD030_O2C_Client_Group\ClientMaintenanceGroups.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD030_O2C_Client_Group\CreateClientGroups.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD047_O2C_VendorMaintenance\GlobalVendorFeature.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD047_O2C_VendorMaintenance\VoucherMaintenance_BarristerFlagSetToFalse.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD047_O2C_VendorMaintenance\VoucherMaintenance_BarristerFlagSetToTrue.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnChargeType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnDisbursementType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnReceiptType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnTimeType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnTransactionType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnUnallocatedType.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release09\FRD043_ProformaGeneration\OverridesOnProformaGeneration.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release09\FRD043_ProformaGeneration\ProformaAttachmentsProcess.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release09\SRS008_ClientMaintainance\Client_Maintenance.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Matter_Aged_AR_Metric.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Metric Reports.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\ClientMatterNotes.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release10\FRD065_RCC_DelegationOfAuthority\DOAReport.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release10\FRD065_RCC_DelegationOfAuthority\DOARoles.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release06\FRD022_TimeModify\PurgeTypeWorkflow.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release06\FRD053 GJ Work Flow\GJEntryApprovalCategoryAmountValidation.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release06\FRD053 GJ Work Flow\GJEntryWithRequiresApprovalCategory.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release06\FRD053 GJ Work Flow\RejectGJEntry.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\Release06\FRD058 GL Detail Descriptions\ReceiptsGlDetailDescription.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="US-Tests\SmokeTests\Non-IntrusiveTests\InvoicesManager.feature.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Boa.Constrictor" Version="2.0.0" />
+		<PackageReference Include="FluentAssertions" Version="6.7.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.0" />
+		<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="107.0.5304.6200" />
+		<PackageReference Include="SpecFlow" Version="3.9.74" />
+		<PackageReference Include="SpecFlow.NUnit.Runners" Version="3.9.74" />
+		<PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+		<PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Elite3E.Infrastructure\Elite3E.Infrastructure.csproj" />
+		<ProjectReference Include="..\Elite3E.PageObjects\Elite3E.PageObjects.csproj" />
+		<ProjectReference Include="..\Elite3E.RestAPI\Elite3E.RestAPI.csproj" />
+		<ProjectReference Include="..\Elite3E.RestServices\Elite3E.RestServices.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Features\Release014\FRD36\BillingRule_OAC_Proforma.feature.cs">
+			<DependentUpon>BillingRule_OAC_Proforma.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release014\FRD36\BillingRule_Internal_Proforma.feature.cs">
+			<DependentUpon>BillingRule_Internal_Proforma.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release014\FRD36\VerifyBillingProcess_FinanceInvoiceDispatch.feature.cs">
+			<DependentUpon>VerifyBillingProcess_FinanceInvoiceDispatch.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release014\FRD36\VerifyBillingProcess_AutoInvoiceDispatch.feature.cs">
+			<DependentUpon>VerifyBillingProcess_AutoInvoiceDispatch.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release014\FRD36\VerifyInvoiceOverride_InvoiceType.feature.cs">
+			<DependentUpon>VerifyInvoiceOverride_InvoiceType.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release2\FRD62_RCC_Banks\VerifyRemittanceAccountOnMatter.feature.cs">
+			<DependentUpon>VerifyRemittanceAccountOnMatter.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release1\FRD057_R2R_ChartOfAccountMapping\CoALegacy.feature.cs">
+			<DependentUpon>CoALegacy.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release1\FRD057_R2R_ChartOfAccountMapping\CoALocalAccount.feature.cs">
+			<DependentUpon>CoALocalAccount.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release6\FRD022_TimeModify\TimeWrittenoff.feature.cs">
+			<DependentUpon>TimeWrittenOff.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_RevokeSome.feature.cs">
+			<DependentUpon>DelegationRights_RevokeSome.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_RevokeAll.feature.cs">
+			<DependentUpon>DelegationRights_RevokeAll.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_AddSome.feature.cs">
+			<DependentUpon>DelegationRights_AddSome.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_AddAll.feature.cs">
+			<DependentUpon>DelegationRights_AddAll.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release8\FRD024 Timekeeper Leaver Checklist\AttachmentUploadAndFieldValidation.feature.cs">
+			<DependentUpon>AttachmentUploadAndFieldValidation.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release8\FRD029_BillingContacts\PayerBillingCOntact.feature.cs">
+			<DependentUpon>PayerBillingContact.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Features\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Metric Reports.feature.cs">
+			<DependentUpon>BOA_Metric Reports.feature</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.02\CR001\TimekeeperFeature.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\DirectChequeWithoutVoucherAudit.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV001-Matter\MatterMaintenance.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV003 - TIMEKEEPER\TimeKeeper.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV004- Payer\Payer.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV005 - GLACCT\GlAccount.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV006 - VENDOR\VendorConfigChanges.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV007 - PAYEE\PayeeMaintenanceConfigChanges.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV009 - BANKACCTAP\BankAccountOfficeConfigChanges.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV010 - BANKACCTRUST\BankAccountTrustChanges.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV011 - INVMASTER\InvoiceMaster.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV012 - TRUSTRECEIPT\Trust Receipt Feature.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV014 - RCPTMASTER\ReceiptMaster.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV015 - INVPAYOR\InvoicePayor.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV017 - ARDETAIL\ARDetail.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV018 - Collectionitem\CollectionITem.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\FRD001\DEV019 - Voucher DEV021 - Ckmaster\VoucherCkMaster.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014.03\VerifyTaskListAuditButton.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV001_Timekeeper Workflow Routing.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV003_Payers And Addresses.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV005_BillSubjectToClientApproval.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV008_UpdatePayer.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV013_DeferAndEstimatedBillDate.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV015_ EBilling Flag.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV017_Updating Apply Adjustment Child Form.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV020_RouteToAndReturnTo.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV021_OfficeConfigurationProformaApprover.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV022_MatterAttributeFinanceFirst.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV024_Proformas Generated via Credit Note.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD019 Billing Workflow\DEV040_WorkflowRouting.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD023_O2C Quick Bill\MatterQuickBilling.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionControlPanel.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionDetailsReport.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionItemNewFields.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionItems.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionWorkflow.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026A_O2C_Collections\ManagedCollectionSteps%28Custom%29.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026A_O2C_Collections\VerifyCustomItemLanguageField.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\DEV001\CollectionInvoiceMetric.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerClientNotes.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerDisputed.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerDoubtful.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerMatterNotes.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManger.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV001 - Post Bill Proforma Edit.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV002 - Dispatch Date.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV003 - Presentation values stored in Bill tables.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV004 - Invoice addresses added to Invoice table.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD043 - Proforma Generation\DEV001 - Workflow Proforma Generation default values.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV001-Verify change of fields and cols in GLUnit.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV002 - GL Unit Group.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV003-Verify that COA Statutory Chart field.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV004-Verify GL Approvers.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV005 - Verify creation of receipt using doubtful ar natural field .feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV006 - Verify GL book field in GJ Entry and GJ Request.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV008 - Statutory Account in advanced search.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV009 - Verify GL Timekeeper segment.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD056 GL\DEV010 - General Journal Entry - GJ Category field.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\BillingRule_Internal_Proforma.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\BillingRule_OAC_Proforma.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\BillingWorkflow_GroupProforma.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\BillingWorkflow_SplitBilling.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\VerifyBillingProcess_AutoInvoiceDispatch.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\VerifyBillingProcess_FinanceInvoiceDispatch.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\VerifyBillingProcess_STKInvoiceDispatch.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release014\FRD36\VerifyInvoiceOverride_InvoiceType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD014_All_TimeKeeperMaintenance\FeeEarnerVerifySignature.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsDuplicateClient.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsOwnerandRespnsibleFeeEarner.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsTimekeeper.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupWithClientAndFeeEarner.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientMaintenanceGroups.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD030_O2C_Client_Group\CreateClientGroups.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD047_O2C_VendorMaintenance\GlobalVendorFeature.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD047_O2C_VendorMaintenance\VoucherMaintenance_BarristerFlagSetToFalse.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD047_O2C_VendorMaintenance\VoucherMaintenance_BarristerFlagSetToTrue.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnChargeType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnDisbursementType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnReceiptType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnTimeType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnTransactionType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnUnallocatedType.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release09\FRD043_ProformaGeneration\OverridesOnProformaGeneration.feature.cs">
+			<DependentUpon>BOA_Metric Reports.feature</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release06\FRD022_TimeModify\PurgeTypeWorkflow.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release09\FRD043_ProformaGeneration\ProformaAttachmentsProcess.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release06\FRD053 GJ Work Flow\GeneralJournalCategories.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release09\SRS008_ClientMaintainance\Client_Maintenance.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release06\FRD053 GJ Work Flow\GJEntryApprovalCategoryAmountValidation.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Matter_Aged_AR_Metric.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release06\FRD053 GJ Work Flow\RejectGJEntry.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Metric Reports.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release06\FRD058 GL Detail Descriptions\ReceiptsGlDetailDescription.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\ClientMatterNotes.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release10\FRD065_RCC_DelegationOfAuthority\DOAReport.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\Release10\FRD065_RCC_DelegationOfAuthority\DOARoles.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+		<Compile Update="US-Tests\SmokeTests\Non-IntrusiveTests\InvoicesManager.feature.cs">
+			<DependentUpon>%(Filename)</DependentUpon>
+		</Compile>
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.TE_3E_FT_TE.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_FT_CA.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_FT_EU.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_FT_SG.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_FT_UK.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_FT_US.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_GD_QA.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_GD_FT.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.local.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_GD_STAGING.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_SIT_CA.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_SIT_EU.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_SIT_SG.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_SIT_UK.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="appsettings.TE_3E_SIT_US.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\3E Lite Time Cost Modify Sample data v0.1.xlsx">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Attachment.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Data Import v0.4.xlsx">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\DataImportv0.1.xlsx">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\TestSignature.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Screenshots\README.md">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Features\EndToEnd\PTS3\O-073 Modify Phase Task Activity\" />
+		<Folder Include="Features\EndToEnd\PTS4\P-028 - Automated Payment Run Payment Proposal rejection\" />
+		<Folder Include="Features\EndToEnd\PTS4\O-111 Manage Rate Exception Groups\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-082- R2R GL Natural Does Not Exists\" />
+		<Folder Include="Features\EndToEnd\PTS4\P-020 - Cheque Production and Management\" />
+		<Folder Include="Features\EndToEnd\PTS4\C-009-RCC- Bank Account Maintenance-Client\" />
+		<Folder Include="Features\EndToEnd\PTS4\C-010-RCC-Bank Reconciliation-Matching Method\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-039 -Posting Financial Data - Receipts %28Client Invoice%29\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-042-R2R-Posting Financial Data - Receipts%28GLReversal%29\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-050-Posting Financial Data - Charge Modify\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-044 Posting Financial Data Trust Receipt\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-030-Posting Financial Data-Time Entry\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-032 -Posting Financial Data - Cost Entry\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-033 - Posting Financial Data - Cost Modify\" />
+		<Folder Include="Features\EndToEnd\PTS4\R-077 Create GL Account%28Local Natural required%29\" />
+		<Folder Include="Features\EndToEnd\PTS5\O-302 - O2C Trust Disbursement Reversal\" />
+		<Folder Include="Features\EndToEnd\PTS5\O-301 - O2C Cash Receipt\" />
+		<Folder Include="Features\EndToEnd\PTS5\O-261 - O2C Apply Client to Office Transfer Client Invoice\" />
+		<Folder Include="Features\EndToEnd\PTS5\O-304 O2C Trust Transfer Reversal\" />
+		<Folder Include="Features\EndToEnd\PTS5\O-066 - O2C Client Maintenance_Client Maintenance\" />
+		<Folder Include="Features\EndToEnd\PTS5\O-303 - O2C Trust Receipt Reversal\" />
+		<Folder Include="Features\EndToEnd\PTS5\O-071 - O2C Matter Maintenance\" />
+		<Folder Include="Features\EndToEnd\PTS5\P031_AmendSupplierRecord_VMS\" />
+		<Folder Include="Features\EndToEnd\PTS6\P-032 Merge Vendor and Payee\" />
+		<Folder Include="Features\EndToEnd\PTS6\P-033 Merge Vendor Duplicate Vendor\" />
+		<Folder Include="Features\Release018\" />
+		<Folder Include="Features\Release014.02\CR001\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV010 - BANKACCTRUST\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV011 - INVMASTER\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV012 - TRUSTRECEIPT\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV014 - RCPTMASTER\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV015 - INVPAYOR\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV017 - ARDETAIL\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV018 - Collectionitem\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV019 - Voucher DEV021 - Ckmaster\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV001-Matter\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV003 - TIMEKEEPER\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV004- Payer\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV005 - GLACCT\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV006 - VENDOR\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV007 - PAYEE\" />
+		<Folder Include="Features\Release014.03\FRD001\DEV009 - BANKACCTAP\" />
+		<Folder Include="Features\Release014\FRD026B_O2C - Invoice Manager\DEV001\" />
+		<Folder Include="Features\Release014\FRD026A_O2C_Collections\" />
+		<Folder Include="Features\Release014\FRD043 - Proforma Generation\" />
+		<Folder Include="Features\Release014\FRD023_O2C Quick Bill\" />
+		<Folder Include="Features\Release014\FRD035 - Proforma Edit\" />
+		<Folder Include="Features\Release018\" />
+		<Folder Include="Features\TE_3E_GD_INTDEV\" />
+		<Folder Include="Features\Release8\FRD028 - Billing Rules Validation List\" />
+		<Folder Include="Features\Release9\FRD043_ProformaGeneration\" />
+		<Folder Include="Features\Release9\FRD043.1_MyMatters\" />
+		<Folder Include="Features\Release9\SRS008_ClientMaintainance\" />
+		<Folder Include="US-Tests\EndToEnd\" />
+		<Folder Include="US-Tests\EndToEnd_Tests\" />
+	</ItemGroup>
+	<ItemGroup>
+		<SpecFlowFeatureFiles Update="Features\Release014\FRD36\BillingRule_OAC_Proforma.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release014\FRD36\BillingRule_Internal_Proforma.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release014\FRD36\VerifyBillingProcess_FinanceInvoiceDispatch.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release014\FRD36\VerifyBillingProcess_AutoInvoiceDispatch.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release014\FRD36\VerifyInvoiceOverride_InvoiceType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release1\FRD057_R2R_ChartOfAccountMapping\CoALegacy.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release1\FRD057_R2R_ChartOfAccountMapping\CoALocalAccount.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.02\CR001\TimekeeperFeature.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\DirectChequeWithoutVoucherAudit.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV001-Matter\MatterMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV003 - TIMEKEEPER\TimeKeeper.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV004- Payer\Payer.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV005 - GLACCT\GlAccount.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV006 - VENDOR\VendorConfigChanges.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV007 - PAYEE\PayeeMaintenanceConfigChanges.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV009 - BANKACCTAP\BankAccountOfficeConfigChanges.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV010 - BANKACCTRUST\BankAccountTrustChanges.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV011 - INVMASTER\InvoiceMaster.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV012 - TRUSTRECEIPT\Trust Receipt Feature.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV014 - RCPTMASTER\ReceiptMaster.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV015 - INVPAYOR\InvoicePayor.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV017 - ARDETAIL\ARDetail.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV018 - Collectionitem\CollectionITem.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\FRD001\DEV019 - Voucher DEV021 - Ckmaster\VoucherCkMaster.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014.03\VerifyTaskListAuditButton.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV001_Timekeeper Workflow Routing.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV003_Payers And Addresses.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV005_BillSubjectToClientApproval.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV008_UpdatePayer.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV013_DeferAndEstimatedBillDate.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV015_ EBilling Flag.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV017_Updating Apply Adjustment Child Form.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV020_RouteToAndReturnTo.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV021_OfficeConfigurationProformaApprover.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV022_MatterAttributeFinanceFirst.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV024_Proformas Generated via Credit Note.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD019 Billing Workflow\DEV040_WorkflowRouting.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD023_O2C Quick Bill\MatterQuickBilling.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionControlPanel.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionDetailsReport.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionItemNewFields.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionItems.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026A_O2C_Collections\CollectionWorkflow.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026A_O2C_Collections\ManagedCollectionSteps%28Custom%29.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026A_O2C_Collections\VerifyCustomItemLanguageField.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\DEV001\CollectionInvoiceMetric.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerClientNotes.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerDisputed.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerDoubtful.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManagerMatterNotes.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD026B_O2C - Invoice Manager\InvoiceManger.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV001 - Post Bill Proforma Edit.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV002 - Dispatch Date.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV003 - Presentation values stored in Bill tables.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD035 - Proforma Edit\DEV004 - Invoice addresses added to Invoice table.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD043 - Proforma Generation\DEV001 - Workflow Proforma Generation default values.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV001-Verify change of fields and cols in GLUnit.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV002 - GL Unit Group.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV003-Verify that COA Statutory Chart field.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV004-Verify GL Approvers.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV005 - Verify creation of receipt using doubtful ar natural field .feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV006 - Verify GL book field in GJ Entry and GJ Request.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV008 - Statutory Account in advanced search.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV009 - Verify GL Timekeeper segment.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD056 GL\DEV010 - General Journal Entry - GJ Category field.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\BillingRule_Internal_Proforma.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\BillingRule_OAC_Proforma.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\BillingWorkflow_GroupProforma.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\BillingWorkflow_SplitBilling.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\VerifyBillingProcess_AutoInvoiceDispatch.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\VerifyBillingProcess_FinanceInvoiceDispatch.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\VerifyBillingProcess_STKInvoiceDispatch.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release014\FRD36\VerifyInvoiceOverride_InvoiceType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD017_O2C_RateTypeMaintenance\EffectiveDateRateReport.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD017_O2C_RateTypeMaintenance\FutureRateInd.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD017_O2C_RateTypeMaintenance\RateTypeFutureDate.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD017_O2C_RateTypeMaintenance\TaxRate.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD018_O2C_Reciepts\GLType_PaymentsProcess.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD018_O2C_Reciepts\Receipts_GLType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD041_O2C_FiscalInvoicing\CannotCreateDoubtfulInvoice.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD041_O2C_FiscalInvoicing\NegativeFiscalInvoiceNumber.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD041_O2C_FiscalInvoicing\NewFiscalInvoiceSetup.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD041_O2C_FiscalInvoicing\Proforma_FiscalInvoice.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD041_O2C_FiscalInvoicing\ReceiptWithoutFiscalInvoice.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD041_O2C_FiscalInvoicing\VerifyCreditNoteCanBeIssued.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD041_O2C_FiscalInvoicing\VerifyGLPosting.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD045_O2C_CostAndChargeTypeGroup\ChargeCostEntryAndModify.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD045_O2C_CostAndChargeTypeGroup\ChargeTypeGroupMatterMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD045_O2C_CostAndChargeTypeGroup\CostTypeGroupMatterMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD045_O2C_CostAndChargeTypeGroup\CreateChargeTypeGroup.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD045_O2C_CostAndChargeTypeGroup\CreateCostTypeGroup.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD045_O2C_CostAndChargeTypeGroup\VerifyChargeAndCostExcludeList.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD045_O2C_CostAndChargeTypeGroup\VerifyDisbursementAndChargeFilter.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD046_O2C_AnticipatedCostTypePurge\AddDisbursementModify.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD046_O2C_AnticipatedCostTypePurge\AddDisbursementType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD046_O2C_AnticipatedCostTypePurge\AddPurgeDetailDisbursement.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD046_O2C_AnticipatedCostTypePurge\AddTransactionType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD046_O2C_AnticipatedCostTypePurge\PDExcludeActicipatedPermissions.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD046_O2C_AnticipatedCostTypePurge\PEPurgeAniticipatedCost.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD62_RCC_Banks\BankAccountsVerifyIdentification.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD62_RCC_Banks\ValidateRemittanceAccount.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release02\FRD62_RCC_Banks\VerifyRemittanceAccountOnMatter.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD037_O2C_Performa_Trust\Client Account Intended Use.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD037_O2C_Performa_Trust\Office Configuration.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD037_O2C_Performa_Trust\ProformaEdit Trust.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD037_O2C_Performa_Trust\ProformaEditGroupBill.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD052_P2P_DirectCheque\DirectChequeClientRefund.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD052_P2P_DirectCheque\DirectChequeNoClientRefund.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD50_P2P_PayeeMaintenance\AddBankAccountType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD50_P2P_PayeeMaintenance\AddPayee.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD50_P2P_PayeeMaintenance\AddVendorPayee.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release03\FRD60_RCC_BankRec\VerifyBankStatements.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+
+		<SpecFlowFeatureFiles Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_RevokeSome.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_RevokeAll.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_AddSome.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release7\FRD003 WorkFlow Delegation\DelegationRights_AddAll.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release8\FRD024 Timekeeper Leaver Checklist\AttachmentUploadAndFieldValidation.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release9\FRD016_TransactionAuditing\AuditButtonChecking.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release9\FRD016_TransactionAuditing\DisbursementModifyAuditPostedBy.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Matter_Aged_AR_Metric.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Features\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Metric Reports.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD014_All_TimeKeeperMaintenance\FeeEarnerVerifySignature.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsDuplicateClient.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsOwnerandRespnsibleFeeEarner.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupsTimekeeper.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientGroupWithClientAndFeeEarner.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD030_O2C_Client_Group\ClientMaintenanceGroups.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD030_O2C_Client_Group\CreateClientGroups.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD047_O2C_VendorMaintenance\GlobalVendorFeature.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD047_O2C_VendorMaintenance\VoucherMaintenance_BarristerFlagSetToFalse.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD047_O2C_VendorMaintenance\VoucherMaintenance_BarristerFlagSetToTrue.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnChargeType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnDisbursementType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnReceiptType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnTimeType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnTransactionType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release04\FRD059_AdditionalPostDescriptions\VerifyNarrativeOnUnallocatedType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD022_TimeModify\NoInternalComments.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD022_TimeModify\PurgeTypeWorkflow.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD022_TimeModify\TimeWrittenOff.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD032_SplitBilling\SuperBill_TimeCostCards.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD053 GJ Work Flow\GeneralJournalCategories.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD053 GJ Work Flow\GJEntryApprovalCategoryAmountValidation.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD053 GJ Work Flow\GJEntryWithNoRequiresApprovalCategory.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD053 GJ Work Flow\GJEntryWithRequiresApprovalCategory.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD053 GJ Work Flow\RejectGJEntry.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD058 GL Detail Descriptions\BilledTimeGLDescription.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD058 GL Detail Descriptions\ChequeDetailsGLDescriptions.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD058 GL Detail Descriptions\ReceiptsGlDetailDescription.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release06\FRD058 GL Detail Descriptions\VoucherDetailGLDescription.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD003 WorkFlow Delegation\DelegationRights_AddAll.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD003 WorkFlow Delegation\DelegationRights_AddSome.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD003 WorkFlow Delegation\DelegationRights_RevokeAll.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD003 WorkFlow Delegation\DelegationRights_RevokeSome.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD009_Setup Management\3EInstancesSetupManagement.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD009_Setup Management\InstanceTypeSetupManagement.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD009_Setup Management\PropagationSetUpManagment.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD009_Setup Management\RegionSetupManagementStepDefinitions.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDF.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDFDuplicate.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDFList.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDFNoArchetypeList.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDFNoValidationList.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDFValidationList.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDFValidationListMapping.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD012_UDF\UDFWithCreatedValidationList.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD066_WIP Provisioning\WIPProvisioning.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release07\FRD066_WIP Provisioning\WIPProvisioningExport.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD007_AllMatterMaintenance\CUST_081_CUST_279 - DEV003.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD007_AllMatterMaintenance\CUST_100 - Additional Matter Number.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD007_AllMatterMaintenance\VerifyChildForms.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD020_O2C My Matters\CreateDeleteModifySystemOptions.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD020_O2C My Matters\MyBillableMattersAccessAndSearchParameters.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD024 Timekeeper Leaver Checklist\AttachmentUploadAndFieldValidation.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD024 Timekeeper Leaver Checklist\Multi User Leaver Workflow.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD024 Timekeeper Leaver Checklist\Reassign and Terminate Workflow.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD024 Timekeeper Leaver Checklist\Single User Leaver Workflow.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD028 - Billing Rules Validation List\AddBillingRulesValidationToAClient.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD028 - Billing Rules Validation List\CreateBillingRulesValidationList.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD028 - Billing Rules Validation List\MatterMaintenanceBillingRulesOptOut.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD028 - Billing Rules Validation List\VerifyBillingRulesOnProformaGeneartion.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD028 - Billing Rules Validation List\VerifyOptOutBillingRulesvalidationOnPerformaGeneration.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD029_BillingContacts\BillingContactChildFormProform.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD029_BillingContacts\BillingContanctType.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD029_BillingContacts\EntityEmail.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD029_BillingContacts\MatterBillingContact.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD029_BillingContacts\PayeeAPContact.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD029_BillingContacts\PayerBillingContact.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release08\FRD029_BillingContacts\ProformaEditBillingContact.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD061_Client Account Disb Self Service\ClientAccountDisbursementRequest.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD061_ClientAccountTransferRequest\CAT_ProcessButton.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD061_ClientAccountTransferRequest\CAT_VerifyTerminateButton.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD061_ClientAccountTransferRequest\ClientAccountTransfer_BillingFeeEarner.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD061_ClientAccountTransferRequest\ClientAccountTransfer_DifferentFeeEarner.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD061_ClientAccountTransferRequest\ClientAccountTransfer_RecievingReturns.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD061_RCC_ClientAccounting\DEV001_ClientAccountReceipt.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release11\FRD61_RCC_ClientAccountAdjustmentFlags\DEV005_ClientAccountAdjustmentFlags.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\CreateNewClient.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\CreateNewVendor.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\CreateVoucher.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\EntityPerson.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Generateabill.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\InvoiceFeature.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Matter.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\BankAccountClientAccount.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ChargeModify.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ChargeTypeGroup.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ClientAccountReceipt.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ClientGroup.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ClientMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\CollectionControlPanel.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\CollectionDetails.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\CostTypeGroup.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\DirectCheque.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\DisbursementModify.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\FeeEarnerMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\FiscalInvoiceSetup.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\GLDetailDescription.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\InvoiceProcess.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\InvoicesManager.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\MatterMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\PayeeMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\Payer.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ProformaEdit.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ProformaGeneration.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\ReceiptsProcess.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\TimeModify.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\VendorMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\VerifySuccessfulLogin.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Non-IntrusiveTests\VoucherMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\RecieptAllocation.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\RunAnAdvancedSearch.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\Search.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\TimeEntry.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\SmokeTests\VendorPayeeMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD016_TransactionAuditing\AuditButtonChecking.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD016_TransactionAuditing\AuditButtonChequeMaintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD016_TransactionAuditing\ChargeModifyAuditPostedBy.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD016_TransactionAuditing\ClientMaintenanceAudit.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD016_TransactionAuditing\DisbursementModifyAuditPostedBy.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD016_TransactionAuditing\TimeModifyAuditPostedBy.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD043.1_MyMatters\CreateAttachmentsForMyMatters.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD043_ProformaGeneration\OverridesOnProformaGeneration.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\FRD043_ProformaGeneration\ProformaAttachmentsProcess.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release09\SRS008_ClientMaintainance\Client_Maintenance.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Matter_Aged_AR_Metric.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\BOA_Metric Reports.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release10\FRD033_BOA Metric Reports and Matter Notes\ClientMatterNotes.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release10\FRD065_RCC_DelegationOfAuthority\DOAReport.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="US-Tests\Release10\FRD065_RCC_DelegationOfAuthority\DOARoles.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Features\Release11\FRD061_RCC_ClientAccounting\" />
+		<Folder Include="Features\Release11\FRD061_Client Account Disb Self Service\" />
+		<Folder Include="Features\Release11\FRD61_RCC_ClientAccountAdjustmentFlags\" />
+		<Folder Include="Features\TE_3E_GD_INTDEV\" />
+		<Folder Include="Features\Release8\FRD028 - Billing Rules Validation List\" />
+		<Folder Include="Features\Release9\FRD043_ProformaGeneration\" />
+		<Folder Include="Features\Release9\FRD043.1_MyMatters\" />
+		<Folder Include="Features\Release9\SRS008_ClientMaintainance\" />
+	</ItemGroup>
+
+</Project>

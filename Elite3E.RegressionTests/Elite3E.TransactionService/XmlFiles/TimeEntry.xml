@@ -1,0 +1,30 @@
+﻿<TimecardPostPending xmlns="http://elite.com/schemas/transaction/process/write/TimecardPostPending">
+	<Initialize xmlns="http://elite.com/schemas/transaction/object/write/TimeCardPending">
+		<Add>
+			<TimeCardPending>
+				<Attributes>
+					<IsNoCharge>1</IsNoCharge>
+					<StartTime>2022-06-02T00:00:00</StartTime>
+					<TimeInterval>NewValue</TimeInterval>
+					<WorkHrs>1</WorkHrs>
+					<TimeType>FEES</TimeType>
+					<WorkType>00</WorkType>
+					<IsNB>1</IsNB>
+					<WorkDate>2022-06-02T00:00:00</WorkDate>
+					<Timekeeper>684</Timekeeper>
+					<Narrative>Annual Leave </Narrative>
+					<Office>8051</Office>
+					<Matter>35</Matter>
+					<Language>2057</Language>
+					<TaxCode>UKOD00</TaxCode>
+					<Currency>GBP</Currency>
+					<LoadGroup>IntApp</LoadGroup>
+					<WorkAmt>1</WorkAmt>
+					<WorkRate>1</WorkRate>
+					<SpvTimekeeper>2</SpvTimekeeper>
+					<IsFlatFeeComplete>1</IsFlatFeeComplete>
+				</Attributes>
+			</TimeCardPending>
+		</Add>
+	</Initialize>
+</TimecardPostPending>

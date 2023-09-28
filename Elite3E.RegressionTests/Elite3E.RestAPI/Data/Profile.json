@@ -1,0 +1,3705 @@
+{
+  "Users": [
+
+    //Financial Accounting
+    {
+      "name": "PROFILE: Financial Accounting Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:General Ledger Analyser"
+        },
+        {
+          "role": "0:FM:A:System Balancing Analyser"
+        },
+        {
+          "role": "0:FM:A:Tax Analyser"
+        },
+        {
+          "role": "0:FM:M:GL Allocation Definition Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Unit Maintainer"
+        },
+        {
+          "role": "0:FM:M:Revaluation Group Maintainer"
+        },
+        {
+          "role": "0:FM:M:Revaluation Maintainer"
+        },
+        {
+          "role": "0:FM:P:Auto Reverse Journal Processor"
+        },
+        {
+          "role": "0:FM:P:GJ Processor"
+        },
+        {
+          "role": "0:FM:P:GJ Reversal Processor"
+        },
+        {
+          "role": "0:FM:P:GL Allocation Generator"
+        },
+        {
+          "role": "0:FM:P:Recurring Journal Definer"
+        },
+        {
+          "role": "0:FM:P:Recurring Journal Generator"
+        },
+        {
+          "role": "0:FM:P:Revaluation Generator"
+        },
+        //{
+        //  "role": "0:FM:R:GL Processor - Financial Accounting[: Unit]"
+        //},
+        {
+          "role": "0:FM:V:General Ledger Viewer"
+        },
+        {
+          "role": "0:PP:P:Bank Reconciliation Processor"
+        },
+        {
+          "role": "0:PP:P:Bank Statement Creator"
+        },
+        {
+          "role": "0:PP:P:Quick Bank Reconciliation Processor"
+        },
+        {
+          "role": "0:PP:U:Bank Statement Uploader"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:WIP Provision Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Financial Accounting Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:General Ledger Analyser"
+        },
+        {
+          "role": "0:FM:A:System Balancing Analyser"
+        },
+        {
+          "role": "0:FM:A:Tax Analyser"
+        },
+        {
+          "role": "0:FM:M:GL Allocation Definition Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Project Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Unit Maintainer"
+        },
+        {
+          "role": "0:FM:M:Revaluation Group Maintainer"
+        },
+        {
+          "role": "0:FM:M:Revaluation Maintainer"
+        },
+        {
+          "role": "0:FM:R:Period Override - All"
+        },
+        {
+          "role": "0:FM:P:Recurring Journal Definer"
+        },
+        {
+          "role": "0:FM:P:Recurring Journal Generator"
+        },
+        {
+          "role": "0:FM:P:Revaluation Generator"
+        },
+        //{
+        //  "role": "0:FM:R:GL Processor - Financial Accounting[: Unit]"
+        //},
+        {
+          "role": "0:FM:V:General Ledger Viewer"
+        },
+        {
+          "role": "0:PP:P:Bank Statement Creator"
+        },
+        {
+          "role": "0:PP:P:Quick Bank Reconciliation Processor"
+        },
+        {
+          "role": "0:PP:U:Bank Statement Uploader"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:M:Charge Type Maintainer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Partner Accounting Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:General Ledger Analyser"
+        },
+        {
+          "role": "0:FM:A:System Balancing Analyser"
+        },
+        {
+          "role": "0:FM:A:Tax Analyser"
+        },
+        //{
+        //  "role": "0:FM:R:GL Processor - Partner Accounts"
+        //},
+        {
+          "role": "0:PA:M:Fee Earner Maintainer - Partner Points"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Partner Accounting Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:General Ledger Analyser"
+        },
+        {
+          "role": "0:FM:A:System Balancing Analyser"
+        },
+        {
+          "role": "0:FM:A:Tax Analyser"
+        },
+        //  {
+        //    "role": "0:FM:R:GL Processor - Partner Accounts"
+        //  },
+        {
+          "role": "0:PA:M:Fee Earner Maintainer - Partner Points"
+        }
+      ]
+    },
+
+    //Accounts Payable
+    {
+      "name": "PROFILE: Accounts Payable Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:PP:A:Accounts Payable Analyser"
+        },
+        {
+          "role": "0:PP:A:Bank Reconciliation Analyser"
+        },
+        {
+          "role": "0:PP:M:Positive Pay Maintainer"
+        },
+        {
+          "role": "0:PP:P:AP Voucher Processor"
+        },
+        {
+          "role": "0:PP:P:Cheque Cancellation Processor"
+        },
+        {
+          "role": "0:PP:P:Payment Proposal Processor"
+        },
+        {
+          "role": "0:PP:U:Invoice Uploader"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:PP:W:Payment Proposal Generator"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Accounts Payable Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:PP:A:Accounts Payable Analyser"
+        },
+        {
+          "role": "0:PP:A:Bank Reconciliation Analyser"
+        },
+        {
+          "role": "0:PP:M:Bank Account Maintainer"
+        },
+        {
+          "role": "0:PP:M:Positive Pay Maintainer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Approver"
+        },
+        {
+          "role": "0:PP:P:Cheque Print Processor"
+        },
+        {
+          "role": "0:PP:P:Payment Processor"
+        },
+        {
+          "role": "0:PP:U:Invoice Uploader"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:PP:W:Payment Proposal Approver"
+        },
+        {
+          "role": "0:PP:W:Payment Proposal Generator"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: AP Master Files Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:Entity Maintainer"
+        },
+        {
+          "role": "0:PP:M:Bank Account Maintainer"
+        },
+        {
+          "role": "0:PP:M:Positive Pay Maintainer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: AP Master Files Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:Entity Maintainer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        }
+      ]
+    },
+
+    //Treasury
+    {
+      "name": "PROFILE: Treasury Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:General Ledger Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Treasury Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:General Ledger Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        }
+      ]
+    },
+
+    //Cashiers
+    {
+      "name": "PROFILE: Cashiers Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:FM:P:Intercompany Receipt Processor"
+        },
+        {
+          "role": "0:PP:P:Direct Cheque Processor"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - BOA"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - Unallocated"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Cashiers Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:M:Bank Account Maintainer"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - BOA"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - Unallocated"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Cashiers Services (CA)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:FM:P:Intercompany Receipt Processor"
+        },
+        {
+          "role": "0:PP:P:Direct Cheque Processor"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - BOA"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - Unallocated"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Cashiers Supervision (CA)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:M:Bank Account Maintainer"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - BOA"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor - Unallocated"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Processor"
+        }
+      ]
+    },
+
+    //Collections
+    {
+      "name": "PROFILE: Collections Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Collection Item Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:P:Write Off Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Collections Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Credit Terms"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Collection Group Link Maintainer"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Collection Item Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:P:Write Off Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Collections Services (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Collection Item Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:P:Write Off Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Collections Supervision (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Credit Terms"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Collection Group Link Maintainer"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Collection Item Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Status Processor"
+        },
+        {
+          "role": "0:WC:P:Write Off Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+
+    //Billing
+    {
+      "name": "PROFILE: Billing Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Finance"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:FM:P:Intercompany Bill Processor"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Billing Group Maintainer"
+        },
+        {
+          "role": "0:WC:P:Bill Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor - Finance"
+        },
+        {
+          "role": "0:WC:P:Charge Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor"
+        },
+        {
+          "role": "0:WC:P:Cost Entry Processor"
+        },
+        {
+          "role": "0:WC:P:Cost Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Split Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Splits Processor"
+        },
+        {
+          "role": "0:WC:P:Non-Workflow Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply BOA"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Trust"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Unallocated"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor - Finance"
+        },
+        {
+          "role": "0:WC:U:WIP Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        },
+        {
+          "role": "0:WC:W:Time Modification Approver"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Billing Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Finance"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Billing Group Maintainer"
+        },
+        {
+          "role": "0:WC:P:Bill Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Billing Statement Processor"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor - Finance"
+        },
+        {
+          "role": "0:WC:P:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor"
+        },
+        {
+          "role": "0:WC:P:Credit Note Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Split Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Splits Processor"
+        },
+        {
+          "role": "0:WC:P:Non-Workflow Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply BOA"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Trust"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Unallocated"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor - Finance"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:WC:U:WIP Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        },
+        {
+          "role": "0:WC:W:Time Modification Approver"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Billing Services (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Finance"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:FM:P:Intercompany Bill Processor"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Billing Group Maintainer"
+        },
+        {
+          "role": "0:WC:P:Bill Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor - Finance"
+        },
+        {
+          "role": "0:WC:P:Charge Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor"
+        },
+        {
+          "role": "0:WC:P:Cost Entry Processor"
+        },
+        {
+          "role": "0:WC:P:Cost Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Split Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Splits Processor"
+        },
+        {
+          "role": "0:WC:P:Non-Workflow Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply BOA"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Trust"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Unallocated"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor - Finance"
+        },
+        {
+          "role": "0:WC:U:WIP Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        },
+        {
+          "role": "0:WC:W:Time Modification Approver"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Billing Supervision (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Finance"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Billing Group Maintainer"
+        },
+        {
+          "role": "0:WC:P:Bill Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Billing Statement Processor"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor - Finance"
+        },
+        {
+          "role": "0:WC:P:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor"
+        },
+        {
+          "role": "0:WC:P:Credit Note Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Split Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Splits Processor"
+        },
+        {
+          "role": "0:WC:P:Non-Workflow Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply BOA"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Trust"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Unallocated"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor - Finance"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:WC:U:WIP Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        },
+        {
+          "role": "0:WC:W:Time Modification Approver"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Billing Coordinator",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Finance"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Bill Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Billing Statement Processor"
+        },
+        {
+          "role": "0:WC:P:Cash Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor - Finance"
+        },
+        {
+          "role": "0:WC:P:Charge Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor"
+        },
+        {
+          "role": "0:WC:P:Cost Entry Processor"
+        },
+        {
+          "role": "0:WC:P:Cost Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Credit Note Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Splits Processor"
+        },
+        {
+          "role": "0:WC:P:Non-Workflow Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply BOA"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Trust"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor - Apply Unallocated"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor - Finance"
+        },
+        {
+          "role": "0:WC:U:WIP Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Processor"
+        },
+        {
+          "role": "0:WC:W:Client Account Bill Processor"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Rates Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Alternative Billing Arrangement Maintainer"
+        },
+        {
+          "role": "0:WC:M:Fee Earner Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Volume Discount Maintainer"
+        },
+        {
+          "role": "0:WC:P:Rate Recalculation Processor"
+        },
+        {
+          "role": "0:WC:U:Rates Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Rates Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Alternative Billing Arrangement Maintainer"
+        },
+        {
+          "role": "0:WC:M:Fee Earner Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Volume Discount Maintainer"
+        },
+        {
+          "role": "0:WC:P:Rate Recalculation Processor"
+        },
+        {
+          "role": "0:WC:U:Rates Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Rates Services (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Alternative Billing Arrangement Maintainer"
+        },
+        {
+          "role": "0:WC:M:Fee Earner Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Volume Discount Maintainer"
+        },
+        {
+          "role": "0:WC:P:Rate Recalculation Processor"
+        },
+        {
+          "role": "0:WC:U:Rates Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Rates Supervision (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Rates"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Volume Discount"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:AD:A:Notifications Analyser"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Alternative Billing Arrangement Maintainer"
+        },
+        {
+          "role": "0:WC:M:Fee Earner Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Rates Maintainer"
+        },
+        {
+          "role": "0:WC:M:Volume Discount Maintainer"
+        },
+        {
+          "role": "0:WC:P:Rate Recalculation Processor"
+        },
+        {
+          "role": "0:WC:U:Rates Uploader"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: eBilling Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - eBilling"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - eBilling"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Proforma Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: eBilling Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - eBilling"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Finance"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - eBilling"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Proforma Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: eBilling Services (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - eBilling"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - eBilling"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Proforma Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: eBilling Supervision (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - eBilling"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Finance"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - eBilling"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:eBilling Invoice Processor"
+        },
+        {
+          "role": "0:WC:P:eBilling Proforma Processor"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Proforma Processor"
+        }
+      ]
+    },
+
+    //Client Accounting
+    {
+      "name": "PROFILE: Client Accounting Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:P:Client Account Adjustment Processor"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Client Account Cheque Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Payment Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Receipt Processor - Days to Clear"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor - Days to Clear"
+        },
+        {
+          "role": "0:WC:R:Client Account Processor[: Unit: Office]"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Client Accounting Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:P:Client Account Adjustment Processor"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Client Bank Account Maintainer"
+        },
+        {
+          "role": "0:WC:P:Client Account Cheque Void Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Interest Calculation Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Reversal Processor"
+        },
+        {
+          "role": "0:WC:R:Client Account Processor[: Unit: Office]"
+        },
+        {
+          "role": "0:WC:R:Client Bank Account Maintainer[: Unit: Office]"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Client Accounting Services (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:P:Client Account Adjustment Processor"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:P:Client Account Cheque Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Payment Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Receipt Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor"
+        },
+        {
+          "role": "0:WC:R:Client Account Processor[: Unit: Office]"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Processor"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Client Accounting Supervision (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Close"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Finance"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:PP:P:Client Account Adjustment Processor"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:M:Client Bank Account Maintainer"
+        },
+        {
+          "role": "0:WC:P:Client Account Cheque Void Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Disbursement Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Interest Calculation Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Receipt Processor - Days to Clear"
+        },
+        {
+          "role": "0:WC:P:Client Account Receipt Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Processor - Days to Clear"
+        },
+        {
+          "role": "0:WC:P:Client Account Transfer Reversal Processor"
+        },
+        {
+          "role": "0:WC:R:Client Account Processor[: Unit: Office]"
+        },
+        {
+          "role": "0:WC:R:Client Bank Account Maintainer[: Unit: Office]"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Processor"
+        }
+      ]
+    },
+
+    // Risk/Compliance
+    {
+      "name": "PROFILE: Risk Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:Entity Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Payor Maintainer"
+        },
+        {
+          "role": "0:CML:Q:Records Retention Reviewer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Risk Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:Entity Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Payor Maintainer"
+        },
+        {
+          "role": "0:CML:Q:Records Retention Reviewer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Risk Services (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:Entity Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Payor Maintainer"
+        },
+        {
+          "role": "0:CML:Q:Records Retention Reviewer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Risk Supervision (EU)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:Entity Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Contacts"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Address"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Create"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Risk"
+        },
+        {
+          "role": "0:CML:M:Payor Maintainer"
+        },
+        {
+          "role": "0:CML:Q:Records Retention Reviewer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer"
+        }
+      ]
+    },
+
+    //Records
+    {
+      "name": "PROFILE: Records Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:A:Records Analyser"
+        },
+        {
+          "role": "0:CML:M:Records Container Maintainer"
+        },
+        {
+          "role": "0:CML:M:Records Disposition Project Maintainer"
+        },
+        {
+          "role": "0:CML:M:Records Maintainer"
+        },
+        {
+          "role": "0:CML:M:Records Reports Maintainer"
+        },
+        {
+          "role": "0:CML:P:Records Processor"
+        },
+        {
+          "role": "0:CML:V:Records Viewer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Records Supervision",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:A:Records Analyser"
+        },
+        {
+          "role": "0:CML:M:Records Container Maintainer"
+        },
+        {
+          "role": "0:CML:M:Records Disposition Project Maintainer"
+        },
+        {
+          "role": "0:CML:M:Records Maintainer"
+        },
+        {
+          "role": "0:CML:M:Records Reports Maintainer"
+        },
+        {
+          "role": "0:CML:P:Records Processor"
+        },
+        {
+          "role": "0:CML:V:Records Viewer"
+        }
+      ]
+    },
+
+    //Admin/IT
+    {
+      "name": "PROFILE: Report Development",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Records Reports Maintainer"
+        },
+        {
+          "role": "0:FM:M:General Ledger Reports Maintainer"
+        },
+        {
+          "role": "0:PP:M:Accounts Payable Reports Maintainer"
+        },
+        {
+          "role": "0:PP:M:Bank Reconciliation Reports Maintainer"
+        },
+        {
+          "role": "0:WC:M:Billing Reports Maintainer"
+        },
+        {
+          "role": "0:WC:M:Client Account Reports Maintainer"
+        },
+        {
+          "role": "0:WC:M:Collections Reports Maintainer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: User Administration",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:User Maintainer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: System Development",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: HR Administration",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:PA:M:Fee Earner Maintainer"
+        },
+        {
+          "role": "0:PA:M:Fee Earner Maintainer - Global Change"
+        },
+        {
+          "role": "0:PA:M:Work Calendar Maintainer"
+        },
+        {
+          "role": "0:WC:M:Fee Earner Rates Maintainer"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Revenue Administration",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer - Global Change"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Management",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: System Administration",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Audit Data Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:System Administrator"
+        },
+        {
+          "role": "0:AD:M:Entity Maintainer"
+        },
+        {
+          "role": "0:AD:M:Language Maintainer"
+        },
+        {
+          "role": "0:AD:M:Role Maintainer"
+        },
+        {
+          "role": "0:AD:M:Row Level Security Access Maintainer"
+        },
+        {
+          "role": "0:AD:M:Workflow Delegation Maintainer"
+        },
+        {
+          "role": "0:AD:P:Build BillSum Processor"
+        },
+        {
+          "role": "0:AD:P:Post Queue Processor"
+        },
+        {
+          "role": "0:AD:P:Posting Results Processor"
+        },
+        {
+          "role": "0:AD:S:Active Directory Load Role"
+        },
+        {
+          "role": "0:AD:S:Bank Statement Load Role"
+        },
+        {
+          "role": "0:AD:S:Client Matter Load Role"
+        },
+        {
+          "role": "0:AD:S:Cost Load Role"
+        },
+        {
+          "role": "0:AD:S:Credit Load Role"
+        },
+        {
+          "role": "0:AD:S:Currency Load Role"
+        },
+        {
+          "role": "0:AD:S:Entity Load Role"
+        },
+        {
+          "role": "0:AD:S:General Journal Load Role"
+        },
+        {
+          "role": "0:AD:S:GL Load Role"
+        },
+        {
+          "role": "0:AD:S:Rate Type Load Role"
+        },
+        {
+          "role": "0:AD:S:Records Inventory Load Role"
+        },
+        {
+          "role": "0:AD:S:Related Party Load Role"
+        },
+        {
+          "role": "0:AD:S:Time Load Role"
+        },
+        {
+          "role": "0:AD:S:Voucher Load Role"
+        },
+        {
+          "role": "0:FM:M:Financial Controls Maintainer"
+        },
+        {
+          "role": "0:FM:M:Financial Period Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Account Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Book Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Local Chart Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Natural Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Type Maintainer"
+        },
+        {
+          "role": "0:FM:M:GL Unit Maintainer"
+        },
+        {
+          "role": "0:FM:M:Tax Maintainer"
+        },
+        {
+          "role": "0:FM:P:Posting Results Processor"
+        },
+        {
+          "role": "0:PP:M:Bank (Branch) Maintainer"
+        },
+        {
+          "role": "0:PP:M:Bank Account Maintainer"
+        },
+        {
+          "role": "0:PP:M:Notification Maintainer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer"
+        },
+        {
+          "role": "0:PP:M:Vendor/Payee Maintainer - Bank Details[: Unit]"
+        },
+        {
+          "role": "0:WC:M:Collection Control Panel Maintainer"
+        },
+        {
+          "role": "0:WC:M:Collection Item Scheduler"
+        },
+        {
+          "role": "0:WC:O:Purge Processor"
+        },
+        {
+          "role": "0:WC:U:WIP Uploader"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Internal Auditor",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:A:Audit Data Analyser"
+        },
+        {
+          "role": "0:AD:A:Exchange Rate Analyser"
+        },
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:A:Records Analyser"
+        },
+        {
+          "role": "0:CML:V:Records Viewer"
+        },
+        {
+          "role": "0:FM:A:Client Account Analyser"
+        },
+        {
+          "role": "0:FM:A:General Ledger Analyser"
+        },
+        {
+          "role": "0:FM:A:System Balancing Analyser"
+        },
+        {
+          "role": "0:FM:A:Tax Analyser"
+        },
+        {
+          "role": "0:FM:V:General Ledger Viewer"
+        },
+        {
+          "role": "0:PP:A:Accounts Payable Analyser"
+        },
+        {
+          "role": "0:PP:A:Bank Reconciliation Analyser"
+        },
+        {
+          "role": "0:PP:V:Accounts Payable Viewer"
+        },
+        {
+          "role": "0:PP:V:Bank Reconciliation Viewer"
+        },
+        {
+          "role": "0:WC:A:Billing Analyser"
+        },
+        {
+          "role": "0:WC:A:Client Account Analyser"
+        },
+        {
+          "role": "0:WC:A:Collections Analyser"
+        },
+        {
+          "role": "0:WC:V:Billing Viewer"
+        },
+        {
+          "role": "0:WC:V:Client Account Viewer"
+        },
+        {
+          "role": "0:WC:V:Collections Viewer"
+        }
+      ]
+    },
+    /*
+    {
+      "name": "PROFILE: Business Analysis Services",
+      "category": "",
+      "Role": [
+        {
+          "role": ""
+        }
+      ]
+    },
+    */
+
+    /*
+    {
+      "name": "PROFILE: Support Analysis Services",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:AD:M:Currency Maintainer"
+        }
+      ]
+    },
+    */
+
+    //Management
+    {
+      "name": "PROFILE: Global Finance Director",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:W:GL Account Approver"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Regional Finance Director",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:FM:W:GL Approver[: Unit: Office]"
+        }
+      ]
+    },
+
+    //Front Office
+    {
+      "name": "PROFILE: Partner (Centralised Billing)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:Q:Records Requester"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Time Recorder"
+        },
+        {
+          "role": "0:WC:W:Bill Modification Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Requestor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Requester"
+        },
+        {
+          "role": "0:WC:W:Partner Proforma Approver"
+        },
+        {
+          "role": "0:WC:W:Proforma Approver"
+        },
+        {
+          "role": "0:WC:W:Proforma Reviewer"
+        },
+        {
+          "role": "0:WC:W:Promise to Pay Requester"
+        },
+        {
+          "role": "0:WC:W:Write Off Requester"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Fee Earner (Centralised Billing)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:Q:Records Requester"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Time Recorder"
+        },
+        {
+          "role": "0:WC:W:Bill Modification Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Requestor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Requester"
+        },
+        {
+          "role": "0:WC:W:Proforma Reviewer"
+        },
+        {
+          "role": "0:WC:W:Write Off Requester"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Legal Assistant (Centralised Billing)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Client Maintainer"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:WC:P:Charge Entry Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Time Recorder"
+        },
+        {
+          "role": "0:WC:W:Bill Modification Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Requestor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Requester"
+        },
+        {
+          "role": "0:WC:W:Proforma Reviewer"
+        },
+        {
+          "role": "0:WC:W:Write Off Requester"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Partner (Decentralised Billing)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Time Recorder"
+        },
+        {
+          "role": "0:WC:W:Bill Modification Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Requestor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Approver"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Requester"
+        },
+        {
+          "role": "0:WC:W:Partner Proforma Approver"
+        },
+        {
+          "role": "0:WC:W:Proforma Approver"
+        },
+        {
+          "role": "0:WC:W:Proforma Reviewer"
+        },
+        {
+          "role": "0:WC:W:Promise to Pay Requester"
+        },
+        {
+          "role": "0:WC:W:Write Off Requester"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Fee Earner (Decentralised Billing)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Time Recorder"
+        },
+        {
+          "role": "0:WC:W:Bill Modification Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Requestor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Requester"
+        },
+        {
+          "role": "0:WC:W:Proforma Reviewer"
+        },
+        {
+          "role": "0:WC:W:Write Off Requester"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: Legal Assistant (Decentralised Billing)",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        },
+        {
+          "role": "0:CML:M:Matter Maintainer"
+        },
+        {
+          "role": "0:WC:P:Matter Split Reversal Processor"
+        },
+        {
+          "role": "0:WC:P:Matter Splits Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Generation Processor"
+        },
+        {
+          "role": "0:WC:P:Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Quick Billing Proforma Processor"
+        },
+        {
+          "role": "0:WC:P:Time Modification Processor"
+        },
+        {
+          "role": "0:WC:P:Time Recorder"
+        },
+        {
+          "role": "0:WC:W:Bill Modification Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Application Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Payment Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Requester"
+        },
+        {
+          "role": "0:WC:W:Client Account Receipt Reversal Requestor"
+        },
+        {
+          "role": "0:WC:W:Client Account Transfer Requester"
+        },
+        {
+          "role": "0:WC:W:Proforma Reviewer"
+        },
+        {
+          "role": "0:WC:W:Write Off Requester"
+        }
+      ]
+    },
+
+    //External
+    {
+      "name": "PROFILE: Third Party Accountant",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        }
+      ]
+    },
+    {
+      "name": "PROFILE: External Auditor",
+      "category": "",
+      "Role": [
+        {
+          "role": "0:AD:G:Common Authorisations"
+        },
+        {
+          "role": "0:AD:G:Deny All"
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,234 @@
+<Payor xmlns="http://elite.com/schemas/transaction/process/write/Payor">
+    <Initialize xmlns="http://elite.com/schemas/transaction/object/write/Payor">
+        <Edit>
+            <Payor KeyValue="1">
+                <Attributes>
+                    <Client>1</Client>
+                    <Entity>16</Entity>
+                    <Site>154</Site>
+                    <DisplayName>London - Domestic Client - Head office</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Edit>
+        <Add>
+            <Payor>
+                <Attributes>
+                    <Client>1</Client>
+                    <Entity>16</Entity>
+                    <Site>154</Site>
+                    <DisplayName>London - Domestic Client - Head office</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Add>
+        <Edit>
+            <Payor KeyValue="5">
+                <Attributes>
+                    <Client>5</Client>
+                    <Entity>1845</Entity>
+                    <Site>1071</Site>
+                    <DisplayName>London - Regional Client  - Chicago</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Edit>
+        <Add>
+            <Payor>
+                <Attributes>
+                    <Client>5</Client>
+                    <Entity>1845</Entity>
+                    <Site>1071</Site>
+                    <DisplayName>London - Regional Client  - Chicago</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Add>
+        <Edit>
+            <Payor KeyValue="4">
+                <Attributes>
+                    <Client>4</Client>
+                    <Entity>1844</Entity>
+                    <Site>1070</Site>
+                    <DisplayName>London - Regional Client - Portugal</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Edit>
+        <Add>
+            <Payor>
+                <Attributes>
+                    <Client>4</Client>
+                    <Entity>1844</Entity>
+                    <Site>1070</Site>
+                    <DisplayName>London - Regional Client - Portugal</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Add>
+        <Edit>
+            <Payor KeyValue="3">
+                <Attributes>
+                    <Client>3</Client>
+                    <Entity>1386</Entity>
+                    <Site>613</Site>
+                    <DisplayName>London - Foreign Supply</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>BB01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Edit>
+        <Add>
+            <Payor>
+                <Attributes>
+                    <Client>3</Client>
+                    <Entity>1386</Entity>
+                    <Site>613</Site>
+                    <DisplayName>London - Foreign Supply</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>BB01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Add>
+        <Edit>
+            <Payor KeyValue="2">
+                <Attributes>
+                    <Client>2</Client>
+                    <Entity>927</Entity>
+                    <Site>155</Site>
+                    <DisplayName>London - Domestic Client - Subsidiary</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Edit>
+        <Add>
+            <Payor>
+                <Attributes>
+                    <Client>2</Client>
+                    <Entity>927</Entity>
+                    <Site>155</Site>
+                    <DisplayName>London - Domestic Client - Subsidiary</DisplayName>
+                    <Is3rdParty>1</Is3rdParty>
+                    <Narrative>NewValue</Narrative>
+                    <IsWithholdingTax>0</IsWithholdingTax>
+                    <StmtSite />
+                    <TaxNum>NewValue</TaxNum>
+                    <AltNum>NewValue</AltNum>
+                    <TaxArea>UK01</TaxArea>
+                    <LastStatementUser />
+                    <LastStatementOffice />
+                    <LastStatementDate>1900-01-02T00:00:00</LastStatementDate>
+                    <LastStatementLanguage />
+                    <ForAttentionOf>NewValue</ForAttentionOf>
+                    <RefNumber>NewValue</RefNumber>
+                </Attributes>
+            </Payor>
+        </Add>
+    </Initialize>
+</Payor>

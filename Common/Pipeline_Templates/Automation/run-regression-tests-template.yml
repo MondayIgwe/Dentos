@@ -1,0 +1,272 @@
+# <#
+#  .Synopsis
+#   Template used to run the regression tests for Elite 3E. Builds and runs the tests. If the tests fail it will publish screenshots to capture details of failures.
+#   
+
+#  .Description
+#   Runs multiple automated UI tests to regression test any changes to Elite 3E.
+#   See Wiki: https://dev.azure.com/dentonsglobal/GFT%203E/_wiki/wikis/GFT-3E.wiki/803/Regression-Testing-ADO-Pipelines
+
+#  .Parameter ASPNETCORE_ENVIRONMENT
+#   Used to select the correct appsettings.json file for running the tests. E.g. if 'TE_3E_GD_FT' is specified then the appsettings.TE_3E_GD_FT.json file will be used with the correct settings i.e. the baseUrl to access Elite 3E.
+
+#  .Parameter TestFilesPattern
+#   Specify the pattern for the dll files to use for the regression tests. Allows the consumer to provide region specific tests e.g. tests.au.dll for example.
+
+#  .Parameter TestFilterCriteria
+#   Specify criteria to restrict the tests that are run for example tests can be categorised and then add a filter e.g. TestCategory=PipelineFailTest|TestCategory=PipelineSuccessfulTest. The default is an empty string.
+#   See here for configuring SpecFlow tests to add categories as 'tags': https://docs.specflow.org/projects/specflow/en/latest/Execution/Executing-Specific-Scenarios.html
+#   See here for details about the testFiltercriteria parameter: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops#arguments
+#   See here for details for building a condition for the testFiltercriteria parameter (search for /TestCaseFilter): https://docs.microsoft.com/en-us/previous-versions/jj155796(v=vs.140)
+
+#  .Parameter IsRetryFailedTests
+#   Determines if the tests will be rerun if any tests fail.
+
+#  .Parameter RetryMaximumCount
+#   The number of times to retry the tests when they fail.
+
+#  .Parameter WaitTimeoutToRetryInSeconds
+#   The time to pause (in seconds) between retrying tests when they fail.
+
+#  .Parameter InvokeVisualStudioTestsPowerShellScriptPath
+#   The path to the PowerShell file that will invoke the Visual Studio Tests in batches with retry logic.
+
+#  .Parameter ScreenshotFolderName
+#   Specify the name of the folder where Selenium screenshots will be created so that they can be copied to artifacts.
+
+#  .Parameter WhatIf
+#   If set to true will just output the variables that will be used in each task but will not perform any actions.
+
+# #>
+
+# PARAMETERS -------------
+
+parameters:
+  - name: ASPNETCORE_ENVIRONMENT
+    displayName: ASPNETCORE_ENVIRONMENT (Used to select the correct appsettings.json file for running the tests)
+    type: string
+
+  - name: TestFilesPattern
+    displayName: Test Files Pattern (Used to define the dlls to use for tests and can be region specific)
+    type: string
+
+  - name: TestFilterCriteria
+    displayName: Test Filter Criteria (Limit the tests using a Category for example e.g. TestCategory=PipelineFailTest|TestCategory=PipelineSuccessfulTest)
+    type: string
+
+  - name: IsRetryFailedTests
+    type: boolean
+    displayName: "Determines if the tests will be rerun if any tests fail."
+    default: true
+
+  - name: RetryMaximumCount
+    displayName: The number of times to retry the tests when they fail.
+    default: 4
+
+  - name: WaitTimeoutToRetryInSeconds
+    displayName: The time to pause (in seconds) between retrying tests when they fail.
+    default: 60
+
+  - name: InvokeVisualStudioTestsPowerShellScriptPath
+    displayName: The path to the PowerShell file that will invoke the Visual Studio Tests in batches with retry logic.
+    default: '$(Build.SourcesDirectory)\DDF_Shared\Common\PowerShell\Testing\VisualStudio\Invoke-VSTestConsole.ps1'
+
+  - name: ScreenshotFolderName
+    displayName: Screenshot Folder Name (Selenium test screenshots)
+    type: string
+
+  # Below is useful for ensuring variables/parameters are correct before running the task for real.
+  - name: WhatIf
+    type: boolean
+    displayName: If set to true will just output the variables that will be used in each task but will NOT perform the actual tasks.
+    default: false
+
+# JOBS -------------
+
+jobs:
+
+  # Build and Run Regression Tests Job -------------
+
+  - job: BuildAndRunRegressionTests
+    workspace:
+      clean: all # what to clean up before the job runs  
+    displayName: 'Build and Run Regression Tests - ${{ parameters.ASPNETCORE_ENVIRONMENT }} (${{ parameters.TestFilterCriteria }})'
+    # Set to 48hrs to handle the situation where the pipeline fails after running 24hrs and no pipeline output is generated to find
+    # the issue. See: https://dev.azure.com/dentonsglobal/GFT%203E/_build/results?buildId=7475&view=results
+    timeoutInMinutes: 2880
+
+    # VARIABLES -------------
+
+    variables: 
+      - group: Regression Tests
+
+      - name: Solution
+        value: '**/*.sln'
+
+      - name: BuildPlatform
+        value: 'Any CPU'
+
+      - name: BuildConfiguration
+        value: 'Release'
+
+      - name: ASPNETCORE_ENVIRONMENT
+        value: ${{ parameters.ASPNETCORE_ENVIRONMENT }}
+
+      - name: BuildPackageFilename
+        value: "WebApp.zip"
+
+      - name: DesktopBuildPackageLocation
+        value: '$(Build.ArtifactStagingDirectory)\$(BuildPackageFilename)'
+
+      - name: FileTransformFolderPath
+        value: '$(Agent.BuildDirectory)'
+
+      - name: TargetFiles
+        value: '**\appsettings*.json'
+
+      # The root of the repository where the Visual Studio Test Console application should be run 
+      # from to identify all the test assemblies to test.
+      - name: TestAdapterPath
+        value: '$(Build.SourcesDirectory)\Global_UI_Automation'
+      
+      # Path to the build agent 'temp' folder where a runsettings file will be stored and 
+      # test results (i.e. trx files) will be output.
+      - name: TempFolderPath
+        value: '$(Agent.TempDirectory)'
+
+      # The name of the folder where the Test Result files (.trx) will be created. This is used for the publish tests
+      # task to use this in the matching pattern. Also passed to the PowerShell.
+      - name: TestResultsFolderName
+        value: "TestResults"
+
+    # STEPS -------------
+
+    steps:
+
+      # Repository Checkout -------------
+
+      # Checkout this repository.
+      - checkout: self
+      # Checkout DDF_Shared repository in the Dentons Development Framework project that contains shared PowerShell for pipelines.
+      - checkout: DDF_Shared
+
+      # Output the variables used for this pipeline.
+      - task: PowerShell@2
+        displayName: Output Parameters/Variables for debugging
+        inputs:
+          targetType: inline
+          script: |
+            Write-Host "ASPNETCORE_ENVIRONMENT Parameter: ${{ parameters.ASPNETCORE_ENVIRONMENT }}"
+            Write-Host "ASPNETCORE_ENVIRONMENT Variable: ${{ variables.ASPNETCORE_ENVIRONMENT }}"
+            Write-Host "TestFilesPattern Parameter: ${{ parameters.TestFilesPattern }}"
+            Write-Host "ScreenshotFolderName Parameter: ${{ parameters.ScreenshotFolderName }}"
+            Write-Host "DesktopBuildPackageLocation Variable: $(DesktopBuildPackageLocation)"
+            Write-Host "FileTransformFolderPath Variable: $(FileTransformFolderPath)"
+            Write-Host "TargetFiles Variable: $(TargetFiles)"
+            Write-Host "`r`nVisual Studio Test Console Details:`r`n"
+            Write-Host "TestAdapterPath: $(TestAdapterPath)"
+            Write-Host "TempFolderPath Variable: $(TempFolderPath)"
+            Write-Host "IsRetryFailedTests: ${{ parameters.IsRetryFailedTests }}"
+            Write-Host "RetryMaximumCount: ${{ parameters.RetryMaximumCount }}"
+            Write-Host "WaitTimeoutToRetryInSeconds: ${{ parameters.WaitTimeoutToRetryInSeconds }}"
+            Write-Host "InvokeVisualStudioTestsPowerShellScriptPath: ${{ parameters.InvokeVisualStudioTestsPowerShellScriptPath }}`r`n"
+
+      # Get latest NuGet.
+      - task: NuGetToolInstaller@1
+        condition: and(succeeded(), eq(${{ parameters.WhatIf }}, false))
+
+      # Restore NuGet packages for the solution.
+      - task: NuGetCommand@2
+        condition: and(succeeded(), eq(${{ parameters.WhatIf }}, false))
+        inputs:
+          restoreSolution: '$(Solution)'
+
+      # Build the Visual Studio solution to prepare for testing.
+      - task: VSBuild@1
+        condition: and(succeeded(), eq(${{ parameters.WhatIf }}, false))
+        inputs:
+          vsVersion: latest
+          solution: '$(Solution)'
+          msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(DesktopBuildPackageLocation)" /p:DeployIisAppPath="Default Web Site"'
+          platform: '$(BuildPlatform)'
+          configuration: '$(BuildConfiguration)'
+
+      # This task replaces variables in the appsettings.json files e.g. replacing the BaseUrlUsername and BaseUrlPassword specified in the 'Regression Tests' variable group
+      # to allow passing user credentials that are used in the Elite 3E URL e.g. https://<username>:<password>@dfin91tewa01.dentons.global/TE_3E_GD_FT/web/ui.
+      # See: https://dev.azure.com/dentonsglobal/GFT%203E/_wiki/wikis/GFT-3E.wiki/803/Regression-Testing-ADO-Pipelines?anchor=regression-tests-variable-group
+      - task: FileTransform@1
+        condition: and(succeeded(), eq(${{ parameters.WhatIf }}, false))
+        displayName: Substitute variables in appsettings.json files
+        inputs:
+          folderPath: "$(FileTransformFolderPath)"
+          fileType: json
+          targetFiles: $(TargetFiles)
+
+      # Run the SpecFlow tests. If there are any failures then run just the features containing those failures again.
+      - ${{ if eq(parameters.IsRetryFailedTests, true) }}:
+        - task: PowerShell@2
+          displayName: Run Visual Studio Tests (Retry Failures) - ${{ parameters.ASPNETCORE_ENVIRONMENT }} (${{ parameters.TestFilterCriteria }})
+          condition: eq(${{ parameters.WhatIf }}, false)
+          inputs:
+            targetType: filePath
+            filePath: "${{ parameters.InvokeVisualStudioTestsPowerShellScriptPath }}"
+            arguments: -TestFilesPattern "${{ parameters.TestFilesPattern }}" -TestFilterCriteria "${{ parameters.TestFilterCriteria }}" -TestAdapterPath "${{ variables.TestAdapterPath }}" -TempFolderPath "${{ variables.TempFolderPath }}" -TestResultsFolderName "${{ variables.TestResultsFolderName }}" -RetryMaximumCount ${{ parameters.RetryMaximumCount }} -WaitTimeoutToRetryInSeconds ${{ parameters.WaitTimeoutToRetryInSeconds }}
+
+      # Publish Test Results for the tests above that uses retry logic for failed tests.
+      # See task for options: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-test-results?view=azure-devops&tabs=trx%2Cyaml#yaml-snippet
+      - ${{ if eq(parameters.IsRetryFailedTests, true) }}:
+        - task: PublishTestResults@2
+          displayName: Publish Visual Studio Tests (Retry Failures) - ${{ parameters.ASPNETCORE_ENVIRONMENT }} (${{ parameters.TestFilterCriteria }})
+          condition: eq(${{ parameters.WhatIf }}, false)
+          inputs:
+            testResultsFormat: 'VSTest' # Options: JUnit, NUnit, VSTest, xUnit, cTest
+            # E.g. **\TestResults\*.trx
+            testResultsFiles: '**\${{ variables.TestResultsFolderName }}\*.trx' #testResultsFiles: '**/TEST-*.xml' 
+            searchFolder: '${{ variables.TempFolderPath }}' # Optional #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional            
+            mergeTestResults: true # Optional
+            testRunTitle: "Regression Tests - ${{ parameters.ASPNETCORE_ENVIRONMENT }} (${{ parameters.TestFilterCriteria }})"
+            
+            # Below are extra options if required:
+            #failTaskOnFailedTests: false # Optional
+            #testRunTitle: # Optional
+            #buildPlatform: # Optional
+            #buildConfiguration: # Optional
+            #publishRunAttachments: true # Optional
+
+      # Run the specflow tests - if IsRetryFailedTests is set to false, the full test suite will be run without retrying if there are failures.
+      - task: VSTest@2
+        displayName: Run Visual Studio Tests (No Retries) - ${{ parameters.ASPNETCORE_ENVIRONMENT }} (${{ parameters.TestFilterCriteria }})
+        condition: and(succeeded(), eq(${{ parameters.WhatIf }}, false), eq(${{ parameters.IsRetryFailedTests }}, false))
+        inputs:
+          platform: '$(BuildPlatform)'
+          configuration: '$(BuildConfiguration)'
+          testAssemblyVer2: |
+            ${{ parameters.TestFilesPattern }}
+            !**\*TestAdapter.dll
+            !**\obj\**
+            !**\bin\**\ref\**
+          uiTests: true
+          testFiltercriteria: ${{ parameters.TestFilterCriteria }}
+          # Retry logic commented out as it isn't solving any problems as it retries multiple times immediately rather than pausing.
+          # rerunFailedTests: true
+          # rerunMaxAttempts: 3
+          # Set the threshold to 100% of tests failing would stop the retries => it will always retry.
+          # rerunFailedThreshold: 100
+
+      # Only copies the screenshots if the tests failed.
+      - task: CopyFiles@2
+        displayName: 'Copy Selenium Screenshots to: $(Build.ArtifactStagingDirectory)'
+        condition: always()
+        inputs:
+          SourceFolder: '$(Agent.BuildDirectory)'
+          Contents: '**\bin\**\${{ parameters.ScreenshotFolderName }}\**'
+          TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+      # Only publish the artifact if the tests failed.
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Artifact: Selenium Screenshots'
+        condition: always()
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: drop
+          publishLocation: 'Container'

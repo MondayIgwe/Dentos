@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PageLocators\ProcessPageLocator\Region\**" />
+    <EmbeddedResource Remove="PageLocators\ProcessPageLocator\Region\**" />
+    <None Remove="PageLocators\ProcessPageLocator\Region\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Elite3E.Infrastructure\Elite3E.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Boa.Constrictor" Version="2.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Interaction\ProcessInteraction\UserRoleManagement\EnterUserFeeEarnerMapping.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="PageLocators\ProcessPageLocator\Bank\BankAccountClientAccountLocators.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="PageLocators\ProcessPageLocator\UserRoleManagement\UserRoleManagementLocators.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interaction\ProcessInteraction\NewFolder\" />
+  </ItemGroup>
+
+</Project>

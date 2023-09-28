@@ -1,0 +1,162 @@
+<NxBizTalkEntity xmlns="http://elite.com/schemas/transaction/process/write/NxBizTalkEntity">
+    <Initialize xmlns="http://elite.com/schemas/transaction/object/write/Entity">
+        <Add>
+            <EntityOrg>
+                <Attributes>
+                    <DisplayName>Dentons_Auto_Test</DisplayName>
+                    <EntityType />
+                    <Comment>NewValue</Comment>
+                    <TaxID>NewValue</TaxID>
+                    <SyncID/>
+                    <EntitySanction />
+                    <AltNum>NewValue</AltNum>
+                    <LoadSource>NewValue</LoadSource>
+                    <LoadGroup>NewValue</LoadGroup>
+                    <LoadNumber>NewValue</LoadNumber>
+                    <IsChangeAll>1</IsChangeAll>
+                    <CalledFrom>StandAlone</CalledFrom>
+                    <KeyID/>
+                    <IsMerged>0</IsMerged>
+                    <NewEntity />
+                    <OrgName>Dentons_Auto_Test</OrgName>
+                    <DunBNumber>NewValue</DunBNumber>
+                    <UlimateDunB>NewValue</UlimateDunB>
+                    <StockSymbol>NewValue</StockSymbol>
+                    <StateOfInc>NewValue</StateOfInc>
+                    <OrganizationType />
+                    <SECNumber>NewValue</SECNumber>
+                    <LocalLangOrg_ccc>NewValue</LocalLangOrg_ccc>
+                </Attributes>
+                <Children>
+                    <EntityUse>
+                        <Add>
+                            <EntityUse>
+                                <Attributes>
+                                    <EntityUseID>80cf5434-ecfd-4705-b725-38dcc222683d</EntityUseID>
+                                    <ArchetypeCode>Bank</ArchetypeCode>
+                                    <Number>NewValue</Number>
+                                    <DisplayName>Z_APPLICATION BANK</DisplayName>
+                                    <ParentIdx>2</ParentIdx>
+                                </Attributes>
+                            </EntityUse>
+                        </Add>
+                    </EntityUse>
+                    <Relate>
+                        <Edit>
+                            <Relate Position="0">
+                                <Attributes>
+                                    <RelType>SELF</RelType>
+                                    <ObjEntity />
+                                    <RelPercent>2</RelPercent>
+                                    <Description>Self</Description>
+                                    <RelTitle>NewValue</RelTitle>
+                                    <RelDepartment>NewValue</RelDepartment>
+                                    <StartDate>1900-01-02T00:00:00</StartDate>
+                                    <FinishDate>1900-01-02T00:00:00</FinishDate>
+                                    <IsValidate>1</IsValidate>
+                                    <IsOrganization>1</IsOrganization>
+                                    <IsDefault>1</IsDefault>
+                                    <SyncID/>
+                                </Attributes>
+                                <Children>
+                                    <Site>
+                                        <Add>
+                                            <Site>
+                                                <Attributes>
+                                                    <Address>2</Address>
+                                                    <SiteType>REGISTERED</SiteType>
+                                                    <Description>Dentons_Auto_Test London</Description>
+                                                    <Attention>NewValue</Attention>
+                                                    <MailStop>NewValue</MailStop>
+                                                    <StartDate>1900-01-02T00:00:00</StartDate>
+                                                    <FinishDate>1900-01-02T00:00:00</FinishDate>
+                                                    <SortString>NewValue</SortString>
+                                                    <IsDefault>0</IsDefault>
+                                                    <Language>1033</Language>
+                                                    <FormatCode>BK1_BANK_STD</FormatCode>
+                                                    <OrgName>Dentons_Auto_Test</OrgName>
+                                                    <Street>1 Fleet Place</Street>
+                                                    <City>London</City>
+                                                    <ZipCode>EC4M 7WS</ZipCode>
+                                                    <County>NewValue</County>
+                                                    <IsUpdateAllSites>1</IsUpdateAllSites>
+                                                    <FormattedString>Dentons_Auto_Test
+1 Fleet Place
+London 
+EC4M 7WS
+UNITED KINGDOM</FormattedString>
+                                                    <AddrDescription>NewValue</AddrDescription>
+                                                    <Country>GB</Country>
+                                                    <TZone />
+                                                    <AddrSiteIdx>0</AddrSiteIdx>
+                                                    <Additional1>NewValue</Additional1>
+                                                    <Additional2>NewValue</Additional2>
+                                                    <Additional3>NewValue</Additional3>
+                                                    <Additional4>NewValue</Additional4>
+                                                    <State />
+                                                    <SyncID/>
+                                                    <ZipCodeLookup />
+                                                </Attributes>
+                                            </Site>
+                                        </Add>
+                                        <Add>
+                                            <Site>
+                                                <Attributes>
+                                                    <Address>116</Address>
+                                                    <SiteType>REGISTERED</SiteType>
+                                                    <Description>Dentons_Auto_Test Tashkent  - Tashkent</Description>
+                                                    <Attention>NewValue</Attention>
+                                                    <MailStop>NewValue</MailStop>
+                                                    <StartDate>1900-01-02T00:00:00</StartDate>
+                                                    <FinishDate>1900-01-02T00:00:00</FinishDate>
+                                                    <SortString>NewValue</SortString>
+                                                    <IsDefault>1</IsDefault>
+                                                    <Language>1033</Language>
+                                                    <FormatCode>BK1_BANK_STD</FormatCode>
+                                                    <OrgName>Dentons_Auto_Test Tashkent</OrgName>
+                                                    <Street>58-a Bobur Street</Street>
+                                                    <City>Tashkent</City>
+                                                    <ZipCode>100022</ZipCode>
+                                                    <County>NewValue</County>
+                                                    <IsUpdateAllSites>1</IsUpdateAllSites>
+                                                    <FormattedString>Dentons_Auto_Test Tashkent
+58-a Bobur Street
+Tashkent 
+100022
+UZBEKISTAN</FormattedString>
+                                                    <AddrDescription>NewValue</AddrDescription>
+                                                    <Country>UZ</Country>
+                                                    <TZone />
+                                                    <AddrSiteIdx>0</AddrSiteIdx>
+                                                    <Additional1>NewValue</Additional1>
+                                                    <Additional2>NewValue</Additional2>
+                                                    <Additional3>NewValue</Additional3>
+                                                    <Additional4>NewValue</Additional4>
+                                                    <State />
+                                                    <SyncID/>
+                                                    <ZipCodeLookup />
+                                                </Attributes>
+                                            </Site>
+                                        </Add>
+                                    </Site>
+                                    <RelatedEntity>
+                                        <Add>
+                                            <RelatedEntity>
+                                                <Attributes>
+                                                    <Entity>1</Entity>
+                                                    <RelTypeDescription>04e799a0-5cbc-45fb-82b1-5f64ca9bcdc7</RelTypeDescription>
+                                                    <InvEntity />
+                                                    <IsSubject>0</IsSubject>
+                                                </Attributes>
+                                            </RelatedEntity>
+                                        </Add>
+                                    </RelatedEntity>
+                                </Children>
+                            </Relate>
+                        </Edit>
+                    </Relate>
+                </Children>
+            </EntityOrg>
+        </Add>
+    </Initialize>
+</NxBizTalkEntity>

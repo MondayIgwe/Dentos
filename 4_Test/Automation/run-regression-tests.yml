@@ -1,0 +1,149 @@
+# <#
+#  .Synopsis
+#   Used to run the regression tests for Elite 3E. Builds and runs the tests. If the tests fail it will publish screenshots to capture details of failures.
+#   
+
+#  .Description
+#   Runs multiple automated UI tests to regression test any changes to Elite 3E.
+#   See Wiki: https://dev.azure.com/dentonsglobal/GFT%203E/_wiki/wikis/GFT-3E.wiki/803/Regression-Testing-ADO-Pipelines
+
+#  .Parameter ASPNETCORE_ENVIRONMENT
+#   Used to select the correct appsettings.json file for running the tests. E.g. if 'TE_3E_GD_FT' is specified then the appsettings.TE_3E_GD_FT.json file will be used with the correct settings i.e. the baseUrl to access Elite 3E.
+
+#  .Parameter TestFilesPattern
+#   Specify the pattern for the dll files to use for the regression tests. Allows the consumer to provide region specific tests e.g. tests.au.dll for example.
+
+#  .Parameter TestFilterCriteria
+#   Specify criteria to restrict the tests that are run for example tests can be categorised and then add a filter e.g. TestCategory=PipelineFailTest|TestCategory=PipelineSuccessfulTest. The default is an empty string.
+#   See here for configuring SpecFlow tests to add categories as 'tags': https://docs.specflow.org/projects/specflow/en/latest/Execution/Executing-Specific-Scenarios.html
+#   See here for details about the testFiltercriteria parameter: https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/vstest?view=azure-devops#arguments
+#   See here for details for building a condition for the testFiltercriteria parameter (search for /TestCaseFilter): https://docs.microsoft.com/en-us/previous-versions/jj155796(v=vs.140)
+
+#  .Parameter IsRetryFailedTests
+#   Determines if the tests will be rerun if any tests fail.
+
+#  .Parameter RetryMaximumCount
+#   The number of times to retry the tests when they fail.
+
+#  .Parameter WaitTimeoutToRetryInSeconds
+#   The time to pause (in seconds) between retrying tests when they fail.
+
+#  .Parameter ScreenshotFolderName
+#   Specify the name of the folder where Selenium screenshots will be created so that they can be copied to artifacts.
+
+#  .Parameter WhatIf
+#   If set to true will just output the variables that will be used in each task but will not perform any actions.
+
+# #>
+
+
+# TRIGGER -------------
+
+# CI / CD disabled 
+trigger:
+- none
+pr:
+- none
+
+# SCHEDULES -------------
+
+# schedules:
+# Cron format: mm HH DD MM DW 
+# See: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml#cron-syntax
+# mm: Minutes
+# HH: Hours
+# DD: Days
+# MM: Months
+# DW: Days of the Week
+# - cron: "0 2 * * MON,TUE,WED,THU,FRI"
+#   displayName: Daily build 2AM (Weekdays only - Mon-Fri)
+#   branches:
+#     include:
+#     - main
+
+# POOL -------------
+
+pool:
+  name: GFT fin91 Test
+
+# RESOURCES -------------
+
+resources:
+  repositories:
+  - repository: DDF_Shared # The name used to reference this repository in the checkout step i.e. the repository alias.
+    type: git
+    # The name of the repository in the format: <ProjectName>/<RepositoryName>
+    name: Dentons Development Framework/DDF_Shared
+    # Reference a branch to checkout e.g. feature/11111_ExampleFeatureBranch.
+    #ref: feature/39179_SplitRegressionTests_DDFShared
+
+# PARAMETERS -------------
+
+parameters:
+  - name: ASPNETCORE_ENVIRONMENT
+    type: string
+    displayName: ASPNETCORE_ENVIRONMENT (Used to select the correct appsettings.json file for running the tests)
+    default: TE_3E_GD_FT    
+    values: 
+    - TE_3E_GD_FT
+    - TE_3E_FT_TE
+    - TE_3E_GD_QA
+    - TE_3E_GD_STAGING
+    - TE_3E_FT_CA
+    - TE_3E_FT_EU
+    - TE_3E_FT_SG
+    - TE_3E_FT_UK
+    - TE_3E_FT_US
+    - TE_3E_SIT_CA
+    - TE_3E_SIT_EU
+    - TE_3E_SIT_SG
+    - TE_3E_SIT_UK
+    - TE_3E_SIT_US
+
+  - name: TestFilesPattern
+    type: string
+    displayName: Test Files Pattern (Used to define the dlls to use for tests and can be region specific)
+    default: '**\*tests.dll'
+
+  - name: TestFilterCriteria
+    type: string
+    displayName: Test Filter Criteria (Limit the tests using a Category for example e.g. TestCategory=PipelineFailTest|TestCategory=PipelineSuccessfulTest|TestCategory=PipelineApiSuccessfulTest|TestCategory=Ft|TestCategory=Qa|TestCategory=Staging|TestCategory=Canada|TestCategory=Europe|TestCategory=Singapore|TestCategory=Uk|TestCategory=Us)
+    default: "TestCategory=ft"
+
+  - name: IsRetryFailedTests
+    type: boolean
+    displayName: "Determines if the tests will be rerun if any tests fail."
+    default: true
+
+  - name: RetryMaximumCount
+    displayName: The number of times to retry the tests when they fail.
+    default: 4
+
+  - name: WaitTimeoutToRetryInSeconds
+    displayName: The time to pause (in seconds) between retrying tests when they fail.
+    default: 60
+
+  - name: ScreenshotFolderName
+    type: string
+    displayName: Screenshot Folder Name (Selenium test screenshots)
+    default: screenshots
+
+  # Below is useful for ensuring variables/parameters are correct before running the task for real.
+  - name: WhatIf
+    type: boolean
+    displayName: If set to true will just output the variables that will be used in each task but will NOT perform the actual tasks.
+    default: false
+
+# Extend Template -------------
+
+extends:
+  template: ../../Common/Pipeline_Templates/Automation/run-regression-tests-template.yml
+  parameters:
+    ASPNETCORE_ENVIRONMENT: ${{ parameters.ASPNETCORE_ENVIRONMENT }}
+    TestFilesPattern: ${{ parameters.TestFilesPattern }}
+    TestFilterCriteria: ${{ parameters.TestFilterCriteria }}
+    ScreenshotFolderName: ${{ parameters.ScreenshotFolderName }}
+    IsRetryFailedTests: ${{ parameters.IsRetryFailedTests }}
+    RetryMaximumCount: ${{ parameters.RetryMaximumCount }}
+    WaitTimeoutToRetryInSeconds: ${{ parameters.WaitTimeoutToRetryInSeconds }}
+    WhatIf: ${{ parameters.WhatIf }}
